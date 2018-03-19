@@ -16,7 +16,8 @@
 <head runat="server">
     <title>Main Page</title>
     <meta http-equiv="Expires" content="0" />
-
+    <%-- This Style is given for Employee Master Detail Form. - Shabbir 01-03-2018  --%>
+    <!-- #region Employee-Master-Detail-Style -->
     <style>
         .centerMargin {
             margin: 0 auto !important;
@@ -66,6 +67,7 @@
                 padding-bottom: 10px;
             }
     </style>
+    <!-- #endregion -->
 
     <%-- Custom Filter For uscRpt by Shabbir on 13-05-2017 --%>
 
@@ -77,8 +79,6 @@
     <script src="Contents/Scripts/jquery.min.js"></script>
 
     <style type="text/css">
-
-
         #people {
             width: 100%;
             height: 100%;
@@ -101,7 +101,7 @@
         .mycell {
         }
     </style>
-    <script type="text/javascript">        
+    <script type="text/javascript">
         function ShowCustomisation_Click(s, e) {
 
             if (ASPxGridView1.IsCustomizationWindowVisible())
