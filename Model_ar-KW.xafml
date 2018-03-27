@@ -5094,6 +5094,8 @@
     <DetailView Id="DisciplinaryRequest_DetailView">
       <Items>
         <PropertyEditor Id="ApprovalProcessTime" Caption="Approval Process Time" />
+        <PropertyEditor Id="DeductionAmount" Caption="Deduction Amount" />
+        <PropertyEditor Id="DeductionDays" Caption="Deduction Days" />
         <PropertyEditor Id="DisciplinaryDate" Caption="Disciplinary Date" />
         <PropertyEditor Id="Employee" Caption="Employee" />
         <PropertyEditor Id="Locked" Caption="Locked" />
@@ -5116,14 +5118,18 @@
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="WorkflowStep" Caption="Workflow Step" />
         <ColumnInfo Id="DisciplinaryDate" Caption="Disciplinary Date" />
+        <ColumnInfo Id="DeductionDays" Caption="Deduction Days" />
+        <ColumnInfo Id="DeductionAmount" Caption="Deduction Amount" />
       </Columns>
     </ListView>
     <ListView Id="DisciplinaryRequest_LookupListView">
       <Columns>
         <ColumnInfo Id="ApprovalProcessTime" Caption="Approval Process Time" />
-        <ColumnInfo Id="Employee" Caption="Employee" />
         <ColumnInfo Id="WorkflowStep" Caption="Workflow Step" />
+        <ColumnInfo Id="Employee" Caption="Employee" />
         <ColumnInfo Id="DisciplinaryDate" Caption="Disciplinary Date" />
+        <ColumnInfo Id="DeductionDays" Caption="Deduction Days" />
+        <ColumnInfo Id="DeductionAmount" Caption="Deduction Amount" />
         <ColumnInfo Id="Locked" Caption="Locked" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
@@ -7069,9 +7075,9 @@
     </DetailView>
     <ListView Id="EmployeeDisciplinary_ListView" Caption="Employee Disciplinary">
       <Columns>
-        <ColumnInfo Id="DisciplinaryType" Caption="Disciplinary Type" />
         <ColumnInfo Id="Locked" Caption="Locked" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
+        <ColumnInfo Id="DisciplinaryType" Caption="Disciplinary Type" />
         <ColumnInfo Id="DisciplinaryDate" Caption="Disciplinary Date" />
         <ColumnInfo Id="Comments" Caption="Comments" />
       </Columns>
@@ -7911,7 +7917,18 @@
         <ColumnInfo Id="PaymentDate" Caption="Payment Date" />
       </Columns>
     </ListView>
-    <ListView Id="EmployeePayment_LookupListView" Caption="Employee Payment" />
+    <ListView Id="EmployeePayment_LookupListView" Caption="Employee Payment">
+      <Columns>
+        <ColumnInfo Id="Comments" Caption="Comments" />
+        <ColumnInfo Id="Employee" Caption="Employee" />
+        <ColumnInfo Id="WageType" Caption="Wage Type" />
+        <ColumnInfo Id="Amount" Caption="Amount" />
+        <ColumnInfo Id="Currency" Caption="Currency" />
+        <ColumnInfo Id="PaymentDate" Caption="Payment Date" />
+        <ColumnInfo Id="Locked" Caption="Locked" />
+        <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
+      </Columns>
+    </ListView>
     <DetailView Id="EmployeePayrollStatus_DetailView" Caption="Employee Payroll Status">
       <Items>
         <PropertyEditor Id="AccountedTo" Caption="Accounted To" />

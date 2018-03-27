@@ -233,8 +233,6 @@
       <OwnMembers>
         <Member Name="AbsenceHours" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
         <Member Name="CalendarDays" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
-        <Member Name="EndTime" />
-        <Member Name="StartDate" />
         <Member Name="StartTime" EditMaskType="DateTime" />
         <Member Name="TotalLeaveDays" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
       </OwnMembers>
@@ -609,11 +607,6 @@
         <Member Name="QuotaUsed" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
       </OwnMembers>
     </Class>
-    <Class Name="HCM10.Module.BusinessObjects.Workflow.WorkflowRequest">
-      <OwnMembers>
-        <Member Name="Employee" ImmediatePostData="True" />
-      </OwnMembers>
-    </Class>
   </BOModel>
   <Localization>
     <LocalizationGroup Name="Controls">
@@ -845,6 +838,7 @@
               <Item Id="DependantType_ListView" Index="9" />
               <Item Id="DisciplinaryType_ListView" Index="10" />
               <Item Id="DisciplinaryDeductionType_ListView" Caption="Disciplinary Deduction Type" Index="11" ImageName="disciplinary" ViewId="DisciplinaryDeductionType_ListView" IsNewNode="True" />
+              <Item Id="NumberSeries" Caption="Number Series" ViewId="NumberSeries_ListView" IsNewNode="True" />
             </Items>
           </Item>
           <Item Id="System Security">
@@ -1185,70 +1179,55 @@
       </Items>
     </DashboardView>
     <DetailView Id="DisciplinaryRequest_DetailView">
-      <Items>
-        <PropertyEditor Id="Employee" ImmediatePostData="True" PropertyName="Employee" />
-      </Items>
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="84.9009900990099">
-            <LayoutGroup Id="DisciplinaryRequest" RelativeSize="29.300291545189506" Direction="Vertical">
-              <LayoutGroup Id="Autoe9551cd4-441b-4b48-8e37-ed2aaed4f6f8" ShowCaption="False" Caption="Autoe9551cd4-441b-4b48-8e37-ed2aaed4f6f8(4)" Index="0" RelativeSize="100" IsNewNode="True">
-                <LayoutGroup Id="Auto31f68fe6-f7c5-4777-ba92-acf429f6af61" ShowCaption="False" Caption="Auto31f68fe6-f7c5-4777-ba92-acf429f6af61(6)" Direction="Vertical" Index="0" RelativeSize="100" IsNewNode="True">
-                  <LayoutGroup Id="Auto7e079bbd-5b1c-47b3-9d08-18f9195dfb05" ShowCaption="False" Caption="Auto7e079bbd-5b1c-47b3-9d08-18f9195dfb05(7)" Index="0" RelativeSize="100" Direction="Vertical" IsNewNode="True">
-                    <LayoutGroup Id="Auto888bea78-bd1f-4d1a-b660-c438e9eac8d7" ShowCaption="False" Caption="Auto888bea78-bd1f-4d1a-b660-c438e9eac8d7(7)" Index="0" RelativeSize="100" IsNewNode="True">
-                      <LayoutGroup Id="Item1" ShowCaption="True" Caption="Disciplinary Request" CaptionLocation="Top" Index="0" RelativeSize="100" IsNewNode="True">
-                        <LayoutGroup Id="Auto66817805-e183-4f2b-9d9c-b5bedabdbca6" ShowCaption="False" Caption="Auto66817805-e183-4f2b-9d9c-b5bedabdbca6(9)" Direction="Horizontal" Index="0" RelativeSize="21.739130434782609" IsNewNode="True">
-                          <LayoutItem Id="Employee" ViewItem="Employee" Index="0" RelativeSize="49.733096085409251" IsNewNode="True" />
-                          <LayoutItem Id="Location" ViewItem="Location" Index="1" RelativeSize="50.266903914590749" IsNewNode="True" />
-                        </LayoutGroup>
-                        <LayoutGroup Id="Auto2b00fe6e-73fa-41b5-889e-de9e2456c678" ShowCaption="False" Caption="Auto2b00fe6e-73fa-41b5-889e-de9e2456c678(12)" Index="1" RelativeSize="78.260869565217391" IsNewNode="True">
-                          <LayoutGroup Id="Autoa91ceb88-506b-44f2-81b3-6f028f6b0807" ShowCaption="False" Caption="Autoa91ceb88-506b-44f2-81b3-6f028f6b0807(13)" Direction="Horizontal" Index="0" RelativeSize="26.19047619047619" IsNewNode="True">
-                            <LayoutItem Id="DisciplinaryDate" ViewItem="DisciplinaryDate" Index="0" RelativeSize="29.448398576512457" IsNewNode="True" />
-                            <LayoutItem Id="DiscplinaryTime" ViewItem="DiscplinaryTime" Index="1" RelativeSize="20.284697508896798" IsNewNode="True" />
-                            <LayoutItem Id="ReportedBy" ViewItem="ReportedBy" Index="2" RelativeSize="50.266903914590749" IsNewNode="True" />
-                          </LayoutGroup>
-                          <LayoutGroup Id="Autoea4b7019-91c3-4c6f-9b10-3ee606f68a5e" ShowCaption="False" Caption="Autoea4b7019-91c3-4c6f-9b10-3ee606f68a5e(17)" Direction="Horizontal" Index="1" RelativeSize="73.80952380952381" IsNewNode="True">
-                            <LayoutItem Id="RequestComments" ViewItem="RequestComments" Index="0" RelativeSize="49.644128113879006" IsNewNode="True" />
-                            <LayoutItem Id="WorkflowComments" ViewItem="WorkflowComments" Index="1" RelativeSize="50.355871886120994" IsNewNode="True" />
-                          </LayoutGroup>
-                        </LayoutGroup>
-                      </LayoutGroup>
-                    </LayoutGroup>
-                  </LayoutGroup>
-                </LayoutGroup>
+          <LayoutGroup Id="SimpleEditors" RelativeSize="83.7871287128713">
+            <LayoutGroup Id="DisciplinaryRequest" RelativeSize="21.565731166912851">
+              <LayoutGroup Id="DisciplinaryRequest_col1" RelativeSize="49.937264742785445">
+                <LayoutItem Id="Employee" RelativeSize="28.571428571428573" />
+                <LayoutItem Id="DisciplinaryDate" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="DiscplinaryTime" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="ReportedBy" RelativeSize="28.571428571428573" />
               </LayoutGroup>
-              <LayoutItem Id="ReportedBy" Index="2" RelativeSize="32.53012048192771" Removed="True" />
-              <LayoutItem Id="DisciplinaryDate" Removed="True" />
-              <LayoutItem Id="DiscplinaryTime" RelativeSize="28.91566265060241" Removed="True" />
-              <LayoutItem Id="Location" Removed="True" />
+              <LayoutGroup Id="DisciplinaryRequest_col2" RelativeSize="50.062735257214555">
+                <LayoutItem Id="RepeatCount" RelativeSize="28.571428571428573" />
+                <LayoutItem Id="DeductionDays" RelativeSize="21.428571428571427" />
+                <LayoutItem Id="DeductionAmount" RelativeSize="50" />
+              </LayoutGroup>
             </LayoutGroup>
-            <LayoutGroup Id="DisciplinaryRequestDetail" ShowCaption="True" Caption="Disciplinary Request Detail" Index="1" RelativeSize="70.699708454810491" IsNewNode="True">
+            <LayoutGroup Id="Auto3fa2baba-8f3a-43ef-8d09-476173c7870d" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="11.669128508124077" IsNewNode="True">
+              <LayoutItem Id="RequestComments" ViewItem="RequestComments" Index="0" RelativeSize="49.939098660170522" IsNewNode="True" />
+              <LayoutItem Id="WorkflowComments" ViewItem="WorkflowComments" Index="1" RelativeSize="50.060901339829478" IsNewNode="True" />
+            </LayoutGroup>
+            <LayoutGroup Id="DisciplinaryRequestDetail" ShowCaption="True" Caption="Disciplinary Request Detail" Index="2" RelativeSize="66.76514032496307" IsNewNode="True">
               <LayoutItem Id="DisciplinaryRequestDetail" ViewItem="DisciplinaryRequestDetail" Index="0" RelativeSize="100" IsNewNode="True" />
             </LayoutGroup>
             <LayoutGroup Id="WorkflowRequest" Removed="True" />
           </LayoutGroup>
-          <TabbedGroup Id="Tabs" RelativeSize="15.099009900990099" Index="1">
+          <TabbedGroup Id="Tabs" RelativeSize="16.212871287128714" Index="1">
             <LayoutGroup Id="WorkflowRequest" ShowCaption="True" Caption="Workflow Request" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
-              <LayoutGroup Id="WorkflowRequest_col1" ShowCaption="False" Index="0" RelativeSize="46.875" IsNewNode="True">
-                <LayoutItem Id="RequestNumber" ViewItem="RequestNumber" Index="0" RelativeSize="40.506329113924053" IsNewNode="True" />
-                <LayoutItem Id="RequestStatus" ViewItem="RequestStatus" Index="1" RelativeSize="59.493670886075947" IsNewNode="True" />
+              <LayoutGroup Id="WorkflowRequest_col1" ShowCaption="False" Index="0" RelativeSize="49.432534678436319" IsNewNode="True">
+                <LayoutItem Id="WorkflowStep" ViewItem="WorkflowStep" Index="0" RelativeSize="36.363636363636367" IsNewNode="True" />
+                <LayoutItem Id="RequestNumber" ViewItem="RequestNumber" Index="1" RelativeSize="27.272727272727273" IsNewNode="True" />
+                <LayoutItem Id="RequestStatus" ViewItem="RequestStatus" Index="2" RelativeSize="36.363636363636367" IsNewNode="True" />
               </LayoutGroup>
-              <LayoutGroup Id="WorkflowRequest_col2" ShowCaption="False" Index="1" RelativeSize="53.125" IsNewNode="True">
-                <LayoutItem Id="WorkflowStep" ViewItem="WorkflowStep" Index="0" RelativeSize="40.506329113924053" IsNewNode="True" />
-                <LayoutItem Id="CurrentWorkFlowRole" ViewItem="CurrentWorkFlowRole" Index="1" RelativeSize="59.493670886075947" IsNewNode="True" />
+              <LayoutGroup Id="WorkflowRequest_col2" ShowCaption="False" Index="1" RelativeSize="50.567465321563681" IsNewNode="True">
+                <LayoutItem Id="ApprovalProcessTime" ViewItem="ApprovalProcessTime" Index="0" RelativeSize="36.363636363636367" IsNewNode="True" />
+                <LayoutItem Id="CurrentWorkFlowRole" ViewItem="CurrentWorkFlowRole" Index="1" RelativeSize="27.272727272727273" IsNewNode="True" />
+                <LayoutItem Id="DelegatedEmployee" ViewItem="DelegatedEmployee" Index="2" RelativeSize="36.363636363636367" IsNewNode="True" />
               </LayoutGroup>
             </LayoutGroup>
             <LayoutGroup Id="DisciplinaryRequestDetail" Index="1" RelativeSize="100" Removed="True">
               <LayoutItem Id="DisciplinaryRequestDetail" RelativeSize="100" />
             </LayoutGroup>
-            <LayoutGroup Id="WorkFlowApprover" Index="1" RelativeSize="100">
+            <LayoutGroup Id="RequestLog" Index="1" RelativeSize="100">
+              <LayoutItem Id="RequestLog" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="WorkFlowApprover" Index="2" RelativeSize="100">
               <LayoutItem Id="WorkFlowApprover" RelativeSize="100" />
             </LayoutGroup>
-            <LayoutGroup Id="WorkflowRemark" Index="2" RelativeSize="100">
+            <LayoutGroup Id="WorkflowRemark" Index="3" RelativeSize="100">
               <LayoutItem Id="WorkflowRemark" RelativeSize="100" />
-            </LayoutGroup>
-            <LayoutGroup Id="RequestLog" Index="3" RelativeSize="100">
-              <LayoutItem Id="RequestLog" RelativeSize="100" />
             </LayoutGroup>
           </TabbedGroup>
           <LayoutGroup Id="SizeableEditors" Caption="SizeableEditors" RelativeSize="21.03960396039604" Direction="Horizontal" Removed="True">
@@ -1616,51 +1595,6 @@
         </LayoutGroup>
       </Layout>
     </DashboardView>
-    <DetailView Id="EmployeeDisciplinary_DetailView">
-      <Layout>
-        <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="12.5">
-            <LayoutGroup Id="EmployeeDisciplinary" RelativeSize="100">
-              <LayoutGroup Id="EmployeeDisciplinary_col1" RelativeSize="50" Caption="EmployeeDisciplinary_col1">
-                <LayoutItem Id="Employee" RelativeSize="50" />
-                <LayoutGroup Id="Auto0ac66457-b230-4a3a-be90-fae116b250e8" ShowCaption="False" Caption="" Direction="Horizontal" Index="1" RelativeSize="50" IsNewNode="True">
-                  <LayoutItem Id="DisciplinaryDate" ViewItem="DisciplinaryDate" Index="0" RelativeSize="50" IsNewNode="True" />
-                  <LayoutItem Id="DisciplinaryTime" ViewItem="DisciplinaryTime" Index="1" RelativeSize="50" IsNewNode="True" />
-                </LayoutGroup>
-                <LayoutItem Id="DisciplinaryDate" Index="1" RelativeSize="50" Removed="True" />
-                <LayoutItem Id="Location" Removed="True" />
-              </LayoutGroup>
-              <LayoutGroup Id="EmployeeDisciplinary_col2" Caption="EmployeeDisciplinary_col2" RelativeSize="50">
-                <LayoutItem Id="Location" ViewItem="Location" Index="0" RelativeSize="50" IsNewNode="True" />
-                <LayoutItem Id="ReportedBy" RelativeSize="50" />
-                <LayoutItem Id="DisciplinaryTime" Removed="True" />
-              </LayoutGroup>
-            </LayoutGroup>
-          </LayoutGroup>
-          <LayoutGroup Id="SizeableEditors" Caption="Comments" RelativeSize="12.995049504950496">
-            <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Remark" IsNewNode="True">
-              <LayoutItem Id="Comments" ViewItem="Comments" Index="0" RelativeSize="100" IsNewNode="True" />
-            </LayoutGroup>
-            <LayoutItem Id="Comments" RelativeSize="100" Removed="True" />
-          </LayoutGroup>
-          <LayoutGroup Id="DisciplinaryDetail_Group" Direction="Vertical" RelativeSize="74.5049504950495">
-            <LayoutItem Id="DisciplinaryDetail" RelativeSize="100" />
-          </LayoutGroup>
-        </LayoutGroup>
-      </Layout>
-    </DetailView>
-    <ListView Id="EmployeeDisciplinary_ListView">
-      <Columns>
-        <ColumnInfo Id="DisciplinaryType" Width="117" Index="-1" />
-        <ColumnInfo Id="EmpCode" Width="66" />
-        <ColumnInfo Id="Employee" Width="193" />
-        <ColumnInfo Id="Location" Width="141" />
-        <ColumnInfo Id="DisciplinaryDate" Width="99" SortIndex="0" SortOrder="Ascending" />
-        <ColumnInfo Id="DisciplinaryTime" Index="4" Width="98" />
-        <ColumnInfo Id="ReportedBy" Index="5" />
-        <ColumnInfo Id="Comments" Index="6" Width="137" />
-      </Columns>
-    </ListView>
     <DetailView Id="EmployeeDocument_DetailView">
       <Items>
         <PropertyEditor Id="Employee" LookupProperty="FullNameEn" />
