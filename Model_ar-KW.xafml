@@ -1561,7 +1561,6 @@
       <OwnMembers>
         <Member Name="Comments" Caption="تعليقات" />
         <Member Name="DisciplinaryDate" Caption="تاريخ التأديب" />
-        <Member Name="DisciplinaryType" Caption="نوع انضباطي" />
         <Member Name="Employee" Caption="موظف" />
         <Member Name="Locked" Caption="مقفل" />
         <Member Name="SysTenant" Caption="المستأجر النظام" />
@@ -5771,7 +5770,6 @@
         <ColumnInfo Id="Locked" Caption="Locked" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="Employee" Caption="Employee" />
-        <ColumnInfo Id="DisciplinaryType" Caption="Disciplinary Type" />
         <ColumnInfo Id="DisciplinaryDate" Caption="Disciplinary Date" />
         <ColumnInfo Id="Comments" Caption="Comments" />
       </Columns>
@@ -7039,7 +7037,6 @@
       <Items>
         <PropertyEditor Id="Comments" Caption="Comments" />
         <PropertyEditor Id="DisciplinaryDate" Caption="Disciplinary Date" />
-        <PropertyEditor Id="DisciplinaryType" Caption="Disciplinary Type" />
         <PropertyEditor Id="Employee" Caption="Employee" />
         <PropertyEditor Id="Locked" Caption="Locked" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
@@ -7052,7 +7049,6 @@
     </DetailView>
     <ListView Id="EmployeeDisciplinary_ListView" Caption="Employee Disciplinary">
       <Columns>
-        <ColumnInfo Id="DisciplinaryType" Caption="Disciplinary Type" />
         <ColumnInfo Id="Locked" Caption="Locked" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="DisciplinaryDate" Caption="Disciplinary Date" />
@@ -7063,7 +7059,6 @@
       <Columns>
         <ColumnInfo Id="Comments" Caption="Comments" />
         <ColumnInfo Id="Employee" Caption="Employee" />
-        <ColumnInfo Id="DisciplinaryType" Caption="Disciplinary Type" />
         <ColumnInfo Id="DisciplinaryDate" Caption="Disciplinary Date" />
         <ColumnInfo Id="Locked" Caption="Locked" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
