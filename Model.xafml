@@ -2224,81 +2224,81 @@
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors" RelativeSize="100">
             <LayoutGroup Id="LeaveRequest" RelativeSize="100">
-              <LayoutGroup Id="LeaveRequest_col1" RelativeSize="99.472096530920055">
-                <LayoutGroup Id="Autof486e4d8-9be4-4550-ac59-96590227049d" RelativeSize="39.425587467362924">
-                  <LayoutGroup Id="Auto3b0a21e2-4b72-47e8-a188-b2af60eb4ef3" ShowCaption="False" Caption="Auto3b0a21e2-4b72-47e8-a188-b2af60eb4ef3(6)" Direction="Vertical" Index="0" RelativeSize="13.907284768211921" IsNewNode="True">
+              <LayoutGroup Id="LeaveRequest_col1" RelativeSize="99.151515151515156">
+                <LayoutGroup Id="Autof486e4d8-9be4-4550-ac59-96590227049d" RelativeSize="39.033942558746737">
+                  <LayoutGroup Id="Auto3b0a21e2-4b72-47e8-a188-b2af60eb4ef3" ShowCaption="False" Caption="Auto3b0a21e2-4b72-47e8-a188-b2af60eb4ef3(6)" Direction="Vertical" Index="0" RelativeSize="14.046822742474916" IsNewNode="True">
                     <LayoutGroup Id="Autoc2598380-04cf-4cf4-8f94-f7f256f670e3" ShowCaption="False" Caption="Autoc2598380-04cf-4cf4-8f94-f7f256f670e3(7)" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
-                      <LayoutItem Id="LeaveConflict" ViewItem="LeaveConflict" SizeConstraintsType="Custom" MinSize="35, 18" Index="0" RelativeSize="91.0538286580743" ShowCaption="False" IsNewNode="True" />
-                      <LayoutItem Id="ShowLeaveConflict" ViewItem="ShowLeaveConflict" Index="1" RelativeSize="8.9461713419257016" IsNewNode="True" />
+                      <LayoutItem Id="LeaveConflict" ViewItem="LeaveConflict" SizeConstraintsType="Custom" MinSize="35, 18" Index="0" RelativeSize="85.574572127139362" ShowCaption="False" IsNewNode="True" />
+                      <LayoutItem Id="ShowLeaveConflict" ViewItem="ShowLeaveConflict" Index="1" RelativeSize="14.425427872860636" IsNewNode="True" />
                     </LayoutGroup>
                   </LayoutGroup>
-                  <TabbedGroup Id="Item3" Index="1" RelativeSize="86.092715231788077">
+                  <TabbedGroup Id="Item3" Index="1" RelativeSize="85.953177257525084">
                     <LayoutGroup Id="Item2">
-                      <LayoutGroup Id="Auto16e2c7e3-26b4-4c72-a0db-d66ae9092818" Caption="Auto16e2c7e3-26b4-4c72-a0db-d66ae9092818(8)" RelativeSize="48.148148148148145">
-                        <LayoutItem Id="Employee" Index="0" RelativeSize="14.222222222222221" />
-                        <LayoutItem Id="AbsenceType" ViewItem="AbsenceType" Index="1" RelativeSize="10.666666666666666" IsNewNode="True" />
-                        <LayoutItem Id="LeavePaymentType" RelativeSize="10.666666666666666" Index="2" />
-                        <LayoutItem Id="RequestComments" ViewItem="RequestComments" Index="3" RelativeSize="64.444444444444443" IsNewNode="True" />
+                      <LayoutGroup Id="Auto16e2c7e3-26b4-4c72-a0db-d66ae9092818" Caption="Auto16e2c7e3-26b4-4c72-a0db-d66ae9092818(8)" RelativeSize="44.40251572327044">
+                        <LayoutItem Id="Employee" Index="0" RelativeSize="14.414414414414415" />
+                        <LayoutItem Id="AbsenceType" ViewItem="AbsenceType" Index="1" RelativeSize="10.810810810810811" IsNewNode="True" />
+                        <LayoutItem Id="LeavePaymentType" RelativeSize="10.810810810810811" Index="2" />
+                        <LayoutItem Id="RequestComments" ViewItem="RequestComments" Index="3" RelativeSize="63.963963963963963" IsNewNode="True" />
                         <LayoutItem Id="StartDate" RelativeSize="27.272727272727273" Removed="True" />
                       </LayoutGroup>
-                      <LayoutGroup Id="Autoaa92d745-ce2c-4912-baff-bf8dd46ccbc0" Caption="Autoaa92d745-ce2c-4912-baff-bf8dd46ccbc0(12)" RelativeSize="51.851851851851855">
-                        <LayoutItem Id="StartDate" ViewItem="StartDate" Index="0" RelativeSize="14.222222222222221" IsNewNode="True" />
-                        <LayoutItem Id="EndDate" RelativeSize="10.666666666666666" Index="1" />
-                        <LayoutItem Id="IsTravelling" Index="2" RelativeSize="9.3333333333333339" ViewItem="IsTravelling" IsNewNode="True" />
-                        <LayoutItem Id="WorkflowComments" ViewItem="WorkflowComments" Index="3" RelativeSize="65.777777777777771" IsNewNode="True" />
+                      <LayoutGroup Id="Autoaa92d745-ce2c-4912-baff-bf8dd46ccbc0" Caption="Autoaa92d745-ce2c-4912-baff-bf8dd46ccbc0(12)" RelativeSize="55.59748427672956">
+                        <LayoutItem Id="StartDate" ViewItem="StartDate" Index="0" RelativeSize="14.414414414414415" IsNewNode="True" />
+                        <LayoutItem Id="EndDate" RelativeSize="10.810810810810811" Index="1" />
+                        <LayoutItem Id="IsTravelling" Index="2" RelativeSize="9.45945945945946" ViewItem="IsTravelling" IsNewNode="True" />
+                        <LayoutItem Id="WorkflowComments" ViewItem="WorkflowComments" Index="3" RelativeSize="65.315315315315317" IsNewNode="True" />
                         <LayoutItem Id="AbsenceType" RelativeSize="29.357798165137616" Removed="True" />
                       </LayoutGroup>
                     </LayoutGroup>
                   </TabbedGroup>
                   <LayoutItem Id="LeaveConflict" RelativeSize="9.74025974025974" SizeConstraintsType="Custom" MinSize="30, 15" Removed="True" />
                 </LayoutGroup>
-                <LayoutGroup Id="Auto7ca608ee-34f9-46c7-9dc9-a0c50b089ce4" RelativeSize="60.574412532637076">
-                  <LayoutGroup Id="Auto4fd0e81e-04e6-4231-a05d-ab207b214ae4" ShowCaption="False" Caption="" Direction="Horizontal" Index="0" RelativeSize="10.991379310344827" IsNewNode="True">
-                    <LayoutGroup Id="Auto7eb46888-80a0-4966-bc34-eeabcae71fa4" ShowCaption="False" Caption="" Index="0" RelativeSize="49.962092494313872" IsNewNode="True">
-                      <LayoutItem Id="StartTime" ViewItem="StartTime" Index="0" RelativeSize="52.941176470588232" IsNewNode="True" />
-                      <LayoutItem Id="AbsenceHours" ViewItem="AbsenceHours" Index="1" RelativeSize="47.058823529411768" IsNewNode="True" />
+                <LayoutGroup Id="Auto7ca608ee-34f9-46c7-9dc9-a0c50b089ce4" RelativeSize="60.966057441253263">
+                  <LayoutGroup Id="Auto4fd0e81e-04e6-4231-a05d-ab207b214ae4" ShowCaption="False" Caption="Auto4fd0e81e-04e6-4231-a05d-ab207b214ae4(23)" Direction="Horizontal" Index="0" RelativeSize="12.847965738758029" IsNewNode="True">
+                    <LayoutGroup Id="Auto7eb46888-80a0-4966-bc34-eeabcae71fa4" ShowCaption="False" Caption="Auto7eb46888-80a0-4966-bc34-eeabcae71fa4(24)" Index="0" RelativeSize="49.755501222493891" IsNewNode="True">
+                      <LayoutItem Id="StartTime" ViewItem="StartTime" Index="0" RelativeSize="50" IsNewNode="True" />
+                      <LayoutItem Id="AbsenceHours" ViewItem="AbsenceHours" Index="1" RelativeSize="50" IsNewNode="True" />
                     </LayoutGroup>
-                    <LayoutItem Id="EndTime" ViewItem="EndTime" Index="1" RelativeSize="50.037907505686128" IsNewNode="True" />
+                    <LayoutItem Id="EndTime" ViewItem="EndTime" Index="1" RelativeSize="50.244498777506109" IsNewNode="True" />
                   </LayoutGroup>
-                  <TabbedGroup Id="Item1" CaptionLocation="Top" Index="1" RelativeSize="25.646551724137932" IsNewNode="True">
+                  <TabbedGroup Id="Item1" CaptionLocation="Top" Index="1" RelativeSize="25.481798715203425" IsNewNode="True">
                     <LayoutGroup Id="Auto6ea70768-6f5c-488a-a5f5-c1e8354dbcc5" ShowCaption="False" Caption="Leave Information" Index="0" RelativeSize="100" IsNewNode="True">
                       <LayoutGroup Id="Autof26294e0-34ea-46d8-9134-f3d125be3ae0" ShowCaption="False" Caption="Autof26294e0-34ea-46d8-9134-f3d125be3ae0(21)" Direction="Horizontal" Index="0" RelativeSize="62.5" IsNewNode="True">
-                        <LayoutGroup Id="Autof5fc4b81-da03-4b40-8a61-1058c1697149" ShowCaption="False" Caption="Autof5fc4b81-da03-4b40-8a61-1058c1697149(32)" Index="0" RelativeSize="50.694444444444443" IsNewNode="True">
+                        <LayoutGroup Id="Autof5fc4b81-da03-4b40-8a61-1058c1697149" ShowCaption="False" Caption="Autof5fc4b81-da03-4b40-8a61-1058c1697149(32)" Index="0" RelativeSize="50.566037735849058" IsNewNode="True">
                           <LayoutItem Id="LeaveBalanceDays" ViewItem="LeaveBalanceDays" Index="0" RelativeSize="50" IsNewNode="True" />
                           <LayoutItem Id="CalendarDays" ViewItem="CalendarDays" Index="1" RelativeSize="50" IsNewNode="True" />
                         </LayoutGroup>
-                        <LayoutItem Id="LeaveBalanceAmount" ViewItem="LeaveBalanceAmount" Index="1" RelativeSize="49.305555555555557" IsNewNode="True" />
+                        <LayoutItem Id="LeaveBalanceAmount" ViewItem="LeaveBalanceAmount" Index="1" RelativeSize="49.433962264150942" IsNewNode="True" />
                       </LayoutGroup>
                       <LayoutGroup Id="Autob5f62cbb-09f4-4d29-a4d5-04e970de9da0" ShowCaption="False" Caption="Autob5f62cbb-09f4-4d29-a4d5-04e970de9da0(24)" Index="1" RelativeSize="37.5" IsNewNode="True">
                         <LayoutGroup Id="Auto5e3a01ed-d962-4fbc-a958-5ae2ddb4efb0" ShowCaption="False" Caption="Auto5e3a01ed-d962-4fbc-a958-5ae2ddb4efb0(26)" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
-                          <LayoutItem Id="QuotaUsed" ViewItem="QuotaUsed" Index="0" RelativeSize="50.694444444444443" IsNewNode="True" />
-                          <LayoutItem Id="LeaveAmount" ViewItem="LeaveAmount" Index="1" RelativeSize="49.305555555555557" IsNewNode="True" />
+                          <LayoutItem Id="QuotaUsed" ViewItem="QuotaUsed" Index="0" RelativeSize="50.566037735849058" IsNewNode="True" />
+                          <LayoutItem Id="LeaveAmount" ViewItem="LeaveAmount" Index="1" RelativeSize="49.433962264150942" IsNewNode="True" />
                         </LayoutGroup>
                       </LayoutGroup>
                     </LayoutGroup>
                   </TabbedGroup>
-                  <LayoutGroup Id="Auto3454220f-6828-493e-af3e-cb5a0c0d92b7" ShowCaption="False" Caption="Auto3454220f-6828-493e-af3e-cb5a0c0d92b7(9)" Direction="Horizontal" Index="2" RelativeSize="6.681034482758621" IsNewNode="True" Removed="True" />
-                  <LayoutGroup Id="Auto2e45528d-499d-4f34-9e40-3e90829800c5" RelativeSize="56.681034482758619" Index="3">
-                    <LayoutGroup Id="Autoc6b6efe6-79f6-4c7f-8b69-52743564bc4a" RelativeSize="79.847908745247153" Direction="Vertical">
-                      <TabbedGroup Id="Item5" CaptionLocation="Top" Index="0" RelativeSize="42.38095238095238" IsNewNode="True">
+                  <LayoutGroup Id="Auto3454220f-6828-493e-af3e-cb5a0c0d92b7" ShowCaption="False" Caption="Auto3454220f-6828-493e-af3e-cb5a0c0d92b7(9)" Direction="Horizontal" Index="2" RelativeSize="0.21413276231263384" IsNewNode="True" Removed="True" />
+                  <LayoutGroup Id="Auto2e45528d-499d-4f34-9e40-3e90829800c5" RelativeSize="61.45610278372591" Index="3">
+                    <LayoutGroup Id="Autoc6b6efe6-79f6-4c7f-8b69-52743564bc4a" RelativeSize="71.428571428571431" Direction="Vertical">
+                      <TabbedGroup Id="Item5" CaptionLocation="Top" Index="0" RelativeSize="43.414634146341463" IsNewNode="True">
                         <LayoutGroup Id="Auto413a2229-3dfa-44d4-87a0-8f18dca68ef6" ShowCaption="False" Caption="Last Leave Detail" Index="0" RelativeSize="100" IsNewNode="True">
                           <LayoutGroup Id="Autoc198cbf3-0b5e-4a90-93f1-75c70b540b49" ShowCaption="False" Caption="Autoc198cbf3-0b5e-4a90-93f1-75c70b540b49(32)" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
-                            <LayoutGroup Id="Auto56674753-6f49-4e41-a906-a3626c28ba52" ShowCaption="False" Caption="Auto56674753-6f49-4e41-a906-a3626c28ba52(45)" Index="0" RelativeSize="50.231481481481481" IsNewNode="True">
+                            <LayoutGroup Id="Auto56674753-6f49-4e41-a906-a3626c28ba52" ShowCaption="False" Caption="Auto56674753-6f49-4e41-a906-a3626c28ba52(45)" Index="0" RelativeSize="50.062893081761004" IsNewNode="True">
                               <LayoutItem Id="LastLeaveType" ViewItem="LastLeaveType" Index="0" RelativeSize="50" IsNewNode="True" />
                               <LayoutItem Id="LastLeaveEnd" ViewItem="LastLeaveEnd" Index="1" RelativeSize="50" IsNewNode="True" />
                             </LayoutGroup>
-                            <LayoutItem Id="LastLeaveStart" ViewItem="LastLeaveStart" Index="1" RelativeSize="49.768518518518519" IsNewNode="True" />
+                            <LayoutItem Id="LastLeaveStart" ViewItem="LastLeaveStart" Index="1" RelativeSize="49.937106918238996" IsNewNode="True" />
                           </LayoutGroup>
                         </LayoutGroup>
                       </TabbedGroup>
                       <LayoutItem Id="EndTime" ViewItem="EndTime" Index="1" RelativeSize="49.962092494313872" Removed="True" />
-                      <TabbedGroup Id="Item7" CaptionLocation="Top" Index="1" RelativeSize="54.285714285714285" IsNewNode="True">
+                      <TabbedGroup Id="Item7" CaptionLocation="Top" Index="1" RelativeSize="55.609756097560975" IsNewNode="True">
                         <LayoutGroup Id="WorkflowRequest" ShowCaption="True" Caption="Workflow Request" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
-                          <LayoutGroup Id="WorkflowRequest_col1" ShowCaption="False" Index="0" RelativeSize="48.148148148148145" IsNewNode="True">
+                          <LayoutGroup Id="WorkflowRequest_col1" ShowCaption="False" Index="0" RelativeSize="44.40251572327044" IsNewNode="True">
                             <LayoutItem Id="RequestNumber" ViewItem="RequestNumber" Index="0" RelativeSize="40.506329113924053" IsNewNode="True" />
                             <LayoutItem Id="RequestStatus" ViewItem="RequestStatus" Index="1" RelativeSize="59.493670886075947" IsNewNode="True" />
                           </LayoutGroup>
-                          <LayoutGroup Id="WorkflowRequest_col2" ShowCaption="False" Index="1" RelativeSize="51.851851851851855" IsNewNode="True">
+                          <LayoutGroup Id="WorkflowRequest_col2" ShowCaption="False" Index="1" RelativeSize="55.59748427672956" IsNewNode="True">
                             <LayoutItem Id="WorkflowStep" ViewItem="WorkflowStep" Index="0" RelativeSize="40.506329113924053" IsNewNode="True" />
                             <LayoutItem Id="CurrentWorkFlowRole" ViewItem="CurrentWorkFlowRole" Index="1" RelativeSize="59.493670886075947" IsNewNode="True" />
                           </LayoutGroup>
@@ -2309,14 +2309,17 @@
                         <LayoutGroup Id="Item6" ShowCaption="True" Caption="Workflow Remark" CaptionLocation="Top" Index="2" RelativeSize="100" IsNewNode="True">
                           <LayoutItem Id="WorkflowRemark" ViewItem="WorkflowRemark" Index="0" RelativeSize="100" IsNewNode="True" />
                         </LayoutGroup>
-                        <LayoutGroup Id="RequestLog" ShowCaption="True" Index="3" RelativeSize="100" Caption="RequestLog" IsNewNode="True">
+                        <LayoutGroup Id="RequestLog" ShowCaption="True" Index="3" RelativeSize="100" Caption="Request Log" IsNewNode="True">
                           <LayoutItem Id="RequestLog" ViewItem="RequestLog" Index="0" RelativeSize="100" IsNewNode="True" />
                         </LayoutGroup>
+                        <LayoutGroup Id="Item4" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="4" RelativeSize="100" Caption="Read Log" IsNewNode="True">
+                          <LayoutItem Id="WFReadLog" ViewItem="WFReadLog" Index="0" RelativeSize="100" IsNewNode="True" />
+                        </LayoutGroup>
                       </TabbedGroup>
-                      <LayoutGroup Id="Autof8eabda1-14e7-4419-a744-6fd1c1d7f121" ShowCaption="False" Caption="Autof8eabda1-14e7-4419-a744-6fd1c1d7f121(24)" Index="2" RelativeSize="3.3333333333333335" Direction="Horizontal" IsNewNode="True" />
+                      <LayoutGroup Id="Autof8eabda1-14e7-4419-a744-6fd1c1d7f121" ShowCaption="False" Caption="Autof8eabda1-14e7-4419-a744-6fd1c1d7f121(24)" Index="2" RelativeSize="0.975609756097561" Direction="Horizontal" IsNewNode="True" />
                       <LayoutItem Id="StartTime" RelativeSize="52.126366950182259" Removed="True" />
                     </LayoutGroup>
-                    <LayoutGroup Id="Autoae00af0e-5973-45a9-b4bc-5f4deef5f404" RelativeSize="20.15209125475285" Direction="Horizontal">
+                    <LayoutGroup Id="Autoae00af0e-5973-45a9-b4bc-5f4deef5f404" RelativeSize="28.571428571428573" Direction="Horizontal" Index="1">
                       <TabbedGroup Id="Item1" RelativeSize="57.27699530516432" Index="0" Removed="True">
                         <LayoutGroup Id="Auto6ea70768-6f5c-488a-a5f5-c1e8354dbcc5">
                           <LayoutGroup Id="Autob5f62cbb-09f4-4d29-a4d5-04e970de9da0" RelativeSize="37.5">
@@ -2358,7 +2361,7 @@
                   </LayoutGroup>
                 </LayoutGroup>
               </LayoutGroup>
-              <LayoutGroup Id="LeaveRequest_col2" Direction="Horizontal" RelativeSize="0.52790346907993968" />
+              <LayoutGroup Id="LeaveRequest_col2" Direction="Horizontal" RelativeSize="0.84848484848484851" />
             </LayoutGroup>
             <LayoutGroup Id="WorkflowRequest" RelativeSize="14.50381679389313" Removed="True">
               <LayoutGroup Id="WorkflowRequest_col1" RelativeSize="50.256410256410256">
@@ -2593,8 +2596,8 @@
       <Layout>
         <LayoutGroup Id="Main">
           <LayoutGroup Id="SimpleEditors" ShowCaption="False" Caption=" " Index="0" RelativeSize="100" IsNewNode="True">
-            <LayoutGroup Id="RequestDetail" ShowCaption="True" Caption="Request Detail" Direction="Horizontal" Index="0" RelativeSize="27.35148514851485" IsNewNode="True">
-              <LayoutGroup Id="RequestDetail_col1" ShowCaption="False" Index="0" RelativeSize="45.820433436532511" IsNewNode="True">
+            <LayoutGroup Id="RequestDetail" ShowCaption="True" Caption="Request Detail" Direction="Horizontal" Index="0" RelativeSize="27.017114914425427" IsNewNode="True">
+              <LayoutGroup Id="RequestDetail_col1" ShowCaption="False" Index="0" RelativeSize="45.724465558194773" IsNewNode="True">
                 <LayoutItem Id="Step" ViewItem="Step" Index="0" RelativeSize="17.112299465240643" IsNewNode="True" />
                 <LayoutItem Id="ShowPayment" ViewItem="ShowPayment" Index="1" RelativeSize="11.229946524064172" IsNewNode="True" />
                 <LayoutItem Id="CanSendBack" ViewItem="CanSendBack" Index="2" RelativeSize="11.229946524064172" IsNewNode="True" />
@@ -2605,16 +2608,17 @@
                 <LayoutItem Id="EscalateWorkflowRole" ViewItem="EscalateWorkflowRole" Index="5" RelativeSize="12.834224598930481" IsNewNode="True" />
                 <LayoutItem Id="EscalateWorkflowRoleGroup" ViewItem="EscalateWorkflowRoleGroup" Index="6" RelativeSize="17.112299465240643" IsNewNode="True" />
               </LayoutGroup>
-              <LayoutGroup Id="RequestDetail_col2" ShowCaption="False" Index="1" RelativeSize="54.179566563467489" IsNewNode="True">
+              <LayoutGroup Id="RequestDetail_col2" ShowCaption="False" Index="1" RelativeSize="54.275534441805227" IsNewNode="True">
                 <LayoutItem Id="Person" ViewItem="Person" Index="0" RelativeSize="17.112299465240643" IsNewNode="True" />
                 <LayoutItem Id="ApproverPerson" ViewItem="ApproverPerson" Index="1" RelativeSize="12.834224598930481" IsNewNode="True" />
                 <LayoutItem Id="WorkflowRoleGroup" ViewItem="WorkflowRoleGroup" Index="2" RelativeSize="12.834224598930481" IsNewNode="True" />
                 <LayoutItem Id="WorkflowRole" ViewItem="WorkflowRole" Index="3" RelativeSize="12.834224598930481" IsNewNode="True" />
                 <LayoutItem Id="ShouldEscalate" ViewItem="ShouldEscalate" Index="4" RelativeSize="11.229946524064172" IsNewNode="True" />
-                <LayoutItem Id="ApprovalRequire" ViewItem="ApprovalRequire" Index="5" RelativeSize="33.155080213903744" IsNewNode="True" />
+                <LayoutItem Id="ApprovalRequire" ViewItem="ApprovalRequire" Index="5" RelativeSize="12.834224598930481" IsNewNode="True" />
+                <LayoutItem Id="EnableReadLog" ViewItem="EnableReadLog" Index="6" RelativeSize="20.320855614973262" IsNewNode="True" />
               </LayoutGroup>
             </LayoutGroup>
-            <LayoutGroup Id="Item4" ShowCaption="True" Caption="Notification Settings " CaptionLocation="Top" Index="1" RelativeSize="72.648514851485146" IsNewNode="True">
+            <LayoutGroup Id="Item4" ShowCaption="True" Caption="Notification Settings " CaptionLocation="Top" Index="1" RelativeSize="72.982885085574566" IsNewNode="True">
               <LayoutItem Id="NotificationConfiguration" ViewItem="NotificationConfiguration" Index="0" RelativeSize="100" IsNewNode="True" />
             </LayoutGroup>
           </LayoutGroup>
@@ -3138,6 +3142,18 @@
     <DetailView Id="TravelReport_DetailView" ImageName="Travel" />
     <ListView Id="TravelReport_ListView" ImageName="Travel" />
     <DetailView Id="VisaType_DetailView" DefaultFocusedItem="NameEn" />
+    <DetailView Id="WFReadLog_DetailView" Caption="Read Log">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="WFReadLog" RelativeSize="100">
+              <LayoutItem Id="RequestType" Index="0" RelativeSize="3.9119804400977993" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="WFReadLog_ListView" Caption="Read Log" />
     <DetailView Id="WorkFlowApprover_DetailView">
       <Items>
         <PropertyEditor Id="CurrentJobTitle" PropertyName="WorkflowRequest.Approver.CurrentJobtitle.NameEn" Caption="JobTitle" LookupProperty="WorkflowRequest.Approver.CurrentJobtitle.NameEn" ImmediatePostData="False" IsNewNode="True" />
@@ -3198,11 +3214,11 @@
           <LayoutGroup Id="SimpleEditors" RelativeSize="100">
             <TabbedGroup Id="Item3" CaptionLocation="Top" Index="0" RelativeSize="15.099009900990099" IsNewNode="True">
               <LayoutGroup Id="WorkflowRequest" ShowCaption="True" Caption="Workflow Request" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
-                <LayoutGroup Id="WorkflowRequest_col1" ShowCaption="False" Index="0" RelativeSize="44.4311377245509" Caption="WorkflowRequest_col1" IsNewNode="True">
+                <LayoutGroup Id="WorkflowRequest_col1" ShowCaption="False" Index="0" RelativeSize="43.233532934131738" Caption="WorkflowRequest_col1" IsNewNode="True">
                   <LayoutItem Id="RequestNumber" ViewItem="RequestNumber" Index="0" RelativeSize="40.506329113924053" IsNewNode="True" />
                   <LayoutItem Id="RequestStatus" ViewItem="RequestStatus" Index="1" RelativeSize="59.493670886075947" IsNewNode="True" />
                 </LayoutGroup>
-                <LayoutGroup Id="WorkflowRequest_col2" ShowCaption="False" Index="1" RelativeSize="55.5688622754491" Caption="WorkflowRequest_col2" IsNewNode="True">
+                <LayoutGroup Id="WorkflowRequest_col2" ShowCaption="False" Index="1" RelativeSize="56.766467065868262" Caption="WorkflowRequest_col2" IsNewNode="True">
                   <LayoutItem Id="WorkflowStep" ViewItem="WorkflowStep" Index="0" RelativeSize="40.506329113924053" IsNewNode="True" />
                   <LayoutItem Id="CurrentWorkFlowRole" ViewItem="CurrentWorkFlowRole" Index="1" RelativeSize="59.493670886075947" IsNewNode="True" />
                 </LayoutGroup>
@@ -3215,6 +3231,9 @@
               </LayoutGroup>
               <LayoutGroup Id="RequestLog" ShowCaption="True" Caption="Request Log" Index="3" RelativeSize="100" IsNewNode="True">
                 <LayoutItem Id="RequestLog" ViewItem="RequestLog" Index="0" RelativeSize="100" IsNewNode="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="Item1" ShowCaption="True" CaptionLocation="Top" Direction="Vertical" Index="4" RelativeSize="100" Caption="Request Read Log" IsNewNode="True">
+                <LayoutItem Id="WFReadLog" ViewItem="WFReadLog" Index="0" RelativeSize="100" IsNewNode="True" />
               </LayoutGroup>
             </TabbedGroup>
             <LayoutGroup Id="Item4" ShowCaption="True" CaptionLocation="Top" Index="1" RelativeSize="84.9009900990099" Caption="Assign Request" IsNewNode="True">
@@ -3254,6 +3273,7 @@
         <SortProperty Id="SortRequestLog" Index="1" Direction="Descending" PropertyName="ActionDateTime" IsNewNode="True" />
       </Sorting>
     </ListView>
+    <ListView Id="WorkflowRequest_WFReadLog_ListView" Caption="Read Log" />
     <ListView Id="WorkflowRequest_WorkflowRemark_ListView">
       <Columns>
         <ColumnInfo Id="CCReceiver" Caption="Remark" />
