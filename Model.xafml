@@ -201,7 +201,6 @@
         <Member Name="BlockNum" Caption="Block Number" />
         <Member Name="BuildingNum" Caption="Building Number" />
         <Member Name="Code" LookupEditorMode="AllItemsWithSearch" LookupProperty="" />
-        <Member Name="CodeWithFullNameEn" LookupEditorMode="AllItemsWithSearch" />
         <Member Name="FatherNameAr" Caption="Father Name Arabic" />
         <Member Name="FatherNameEn" Caption="Father Name English" />
         <Member Name="FirstNameAr" Caption="First Name Arabic" />
@@ -683,11 +682,6 @@
               <Item Id="TimeRegister_ListView" Visible="False" />
             </Items>
           </Item>
-          <Item Id="Payroll Management">
-            <Items>
-              <Item Id="EmployeeOvertime_ListView" ViewId="EmployeeOvertime_ListView" />
-            </Items>
-          </Item>
         </Items>
       </Item>
       <Item Id="Workflow">
@@ -799,7 +793,6 @@
                 </Items>
               </Item>
               <Item Id="AuditTrail" Caption="Audit Trail" ImageName="analysis" ViewId="Audit" IsNewNode="True" />
-              <Item Id="CopyWFRequestSetUp" ViewId="CopyRequestSetup" IsNewNode="True" />
               <Item Id="LeavePlanner" Caption="Leave Planner" ViewId="LeavePlanner" IsNewNode="True" />
             </Items>
           </Item>
@@ -1195,11 +1188,6 @@
     </DashboardView>
     <DetailView Id="City_DetailView" DefaultFocusedItem="NameEn" />
     <DetailView Id="ContractType_DetailView" DefaultFocusedItem="NameEn" />
-    <DashboardView Id="CopyRequestSetup" ImageName="Action_Copy_CellValue" Caption="Copy Request Setup" IsNewNode="True">
-      <Items IsNewNode="True">
-        <CustomUserControlViewItemWeb Id="uscCopyWorkflowSetup.ascx" CustomControlPath="~/UserControls/uscCopyWorkflowSetup.ascx" Caption="uscCopyWorkflowSetup.ascx" IsNewNode="True" />
-      </Items>
-    </DashboardView>
     <DashboardView Id="Disciplinary" Caption="Disciplinary" ImageName="analysis" IsNewNode="True">
       <Items IsNewNode="True">
         <CustomUserControlViewItemWeb Id="Disciplinary" CustomControlPath="~/UserControls/Reports/Analysis/Employees/uscRptDiscipilnary.ascx" Caption="Disciplinary" IsNewNode="True" />
@@ -1320,7 +1308,7 @@
               </LayoutGroup>
               <LayoutGroup Id="DocumentRequest_col2" RelativeSize="47.004991680532449">
                 <LayoutItem Id="DocumentNum" ViewItem="DocumentNum" Index="2" RelativeSize="40.425531914893618" IsNewNode="True" />
-                <LayoutItem Id="Comments" RelativeSize="14.893617021276596" Index="3" Removed="True" />
+                <LayoutItem Id="Comments" RelativeSize="14.893617021276595" Index="3" Removed="True" />
                 <LayoutItem Id="DeliveryDate" RelativeSize="34.042553191489361" />
                 <LayoutItem Id="ReturnDate" RelativeSize="25.531914893617021" />
               </LayoutGroup>
@@ -1906,26 +1894,6 @@
         <ColumnInfo Id="Employee" LookupProperty="FullNameEn" />
       </Columns>
     </ListView>
-    <DetailView Id="EmployeeOvertime_DetailView">
-      <Items>
-        <PropertyEditor Id="Employee" LookupProperty="CodeWithFullNameEn" />
-      </Items>
-    </DetailView>
-    <ListView Id="EmployeeOvertime_ListView" DataAccessMode="Server" NewItemRowPosition="None">
-      <Columns>
-        <ColumnInfo Id="EmpCode" PropertyName="Employee.Code" Index="0" AllowEdit="False" IsNewNode="True" />
-        <ColumnInfo Id="Employee" LookupProperty="FullNameEn" Index="1" />
-        <ColumnInfo Id="EffectiveDate" Index="2" />
-        <ColumnInfo Id="OvertimeHours" Index="3" />
-        <ColumnInfo Id="ActualOvertimeHours" Index="4" />
-        <ColumnInfo Id="ApprovedOvertimeHours" Index="5" />
-      </Columns>
-    </ListView>
-    <DetailView Id="EmployeeRecurringPayment_DetailView">
-      <Items>
-        <PropertyEditor Id="WageType" DataSourceCriteriaProperty="" DataSourceCriteria="[IncludeInBasicPay] = False Or [IncludeInArrearPay] = False Or [IncludeInCalculatedPay] = False" />
-      </Items>
-    </DetailView>
     <DetailView Id="EmployeeSponsor_DetailView">
       <Items>
         <PropertyEditor Id="Sponsor" LookupEditorMode="Search" />
@@ -2394,13 +2362,13 @@
               </LayoutGroup>
               <LayoutGroup Id="LeaveRequest_col2" Direction="Horizontal" RelativeSize="0.84848484848484851" />
             </LayoutGroup>
-            <LayoutGroup Id="WorkflowRequest" RelativeSize="14.50381679389313" Removed="True">
-              <LayoutGroup Id="WorkflowRequest_col1" RelativeSize="50.256410256410256">
+            <LayoutGroup Id="WorkflowRequest" RelativeSize="14.503816793893129" Removed="True">
+              <LayoutGroup Id="WorkflowRequest_col1" RelativeSize="50.256410256410255">
                 <LayoutItem Id="RequestNumber" RelativeSize="27.272727272727273" Index="1" />
                 <LayoutItem Id="RequestStatus" RelativeSize="36.363636363636367" Index="2" />
                 <LayoutItem Id="WorkflowStep" RelativeSize="36.363636363636367" />
               </LayoutGroup>
-              <LayoutGroup Id="WorkflowRequest_col2" RelativeSize="49.743589743589744">
+              <LayoutGroup Id="WorkflowRequest_col2" RelativeSize="49.743589743589745">
                 <LayoutItem Id="ApproverJobTitle" Index="1" RelativeSize="27.272727272727273" />
                 <LayoutItem Id="CurrentWorkFlowRole" Index="2" RelativeSize="36.363636363636367" />
                 <LayoutItem Id="ApprovalProcessTime" RelativeSize="36.363636363636367" />
@@ -2762,7 +2730,7 @@
               <LayoutItem Id="RequestComments" ViewItem="RequestComments" SizeConstraintsType="Custom" MinSize="188, 35" Index="0" RelativeSize="49.015063731170336" IsNewNode="True" />
               <LayoutItem Id="WorkflowComments" ViewItem="WorkflowComments" Index="1" RelativeSize="50.984936268829664" IsNewNode="True" />
             </LayoutGroup>
-            <TabbedGroup Id="Item4" CaptionLocation="Top" Index="2" RelativeSize="12.995049504950496" IsNewNode="True">
+            <TabbedGroup Id="Item4" CaptionLocation="Top" Index="2" RelativeSize="12.995049504950495" IsNewNode="True">
               <LayoutGroup Id="Item3" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Rejoining Detail" IsNewNode="True">
                 <LayoutGroup Id="Auto0878a7d8-e3fa-4011-9cfa-f2c799b54b51" ShowCaption="False" Caption="Auto0878a7d8-e3fa-4011-9cfa-f2c799b54b51(22)" Direction="Horizontal" Index="0" RelativeSize="47.945205479452056" IsNewNode="True">
                   <LayoutItem Id="RejoiningDate" ViewItem="RejoiningDate" Index="0" RelativeSize="50.059880239520957" IsNewNode="True" />
@@ -3173,18 +3141,6 @@
     <DetailView Id="TravelReport_DetailView" ImageName="Travel" />
     <ListView Id="TravelReport_ListView" ImageName="Travel" />
     <DetailView Id="VisaType_DetailView" DefaultFocusedItem="NameEn" />
-    <DetailView Id="WFReadLog_DetailView" Caption="Read Log">
-      <Layout>
-        <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
-            <LayoutGroup Id="WFReadLog" RelativeSize="100">
-              <LayoutItem Id="RequestType" Index="0" RelativeSize="3.9119804400977993" />
-            </LayoutGroup>
-          </LayoutGroup>
-        </LayoutGroup>
-      </Layout>
-    </DetailView>
-    <ListView Id="WFReadLog_ListView" Caption="Read Log" />
     <DetailView Id="WorkFlowApprover_DetailView">
       <Items>
         <PropertyEditor Id="CurrentJobTitle" PropertyName="WorkflowRequest.Approver.CurrentJobtitle.NameEn" Caption="JobTitle" LookupProperty="WorkflowRequest.Approver.CurrentJobtitle.NameEn" ImmediatePostData="False" IsNewNode="True" />
@@ -3304,7 +3260,6 @@
         <SortProperty Id="SortRequestLog" Index="1" Direction="Descending" PropertyName="ActionDateTime" IsNewNode="True" />
       </Sorting>
     </ListView>
-    <ListView Id="WorkflowRequest_WFReadLog_ListView" Caption="Read Log" />
     <ListView Id="WorkflowRequest_WorkflowRemark_ListView">
       <Columns>
         <ColumnInfo Id="CCReceiver" Caption="Remark" />
