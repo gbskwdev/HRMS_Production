@@ -201,6 +201,7 @@
         <Member Name="BlockNum" Caption="Block Number" />
         <Member Name="BuildingNum" Caption="Building Number" />
         <Member Name="Code" LookupEditorMode="AllItemsWithSearch" LookupProperty="" />
+        <Member Name="CodeWithFullNameEn" LookupEditorMode="AllItemsWithSearch" />
         <Member Name="FatherNameAr" Caption="Father Name Arabic" />
         <Member Name="FatherNameEn" Caption="Father Name English" />
         <Member Name="FirstNameAr" Caption="First Name Arabic" />
@@ -328,7 +329,6 @@
     <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeRecurringPayment">
       <OwnMembers>
         <Member Name="Amount" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
-        <Member Name="RecurNumber" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
       </OwnMembers>
     </Class>
     <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeRemuneration">
@@ -683,6 +683,11 @@
               <Item Id="TimeRegister_ListView" Visible="False" />
             </Items>
           </Item>
+          <Item Id="Payroll Management">
+            <Items>
+              <Item Id="EmployeeOvertime_ListView" ViewId="EmployeeOvertime_ListView" />
+            </Items>
+          </Item>
         </Items>
       </Item>
       <Item Id="Workflow">
@@ -794,6 +799,7 @@
                 </Items>
               </Item>
               <Item Id="AuditTrail" Caption="Audit Trail" ImageName="analysis" ViewId="Audit" IsNewNode="True" />
+              <Item Id="CopyWFRequestSetUp" ViewId="CopyRequestSetup" IsNewNode="True" />
               <Item Id="LeavePlanner" Caption="Leave Planner" ViewId="LeavePlanner" IsNewNode="True" />
             </Items>
           </Item>
@@ -1189,6 +1195,11 @@
     </DashboardView>
     <DetailView Id="City_DetailView" DefaultFocusedItem="NameEn" />
     <DetailView Id="ContractType_DetailView" DefaultFocusedItem="NameEn" />
+    <DashboardView Id="CopyRequestSetup" ImageName="Action_Copy_CellValue" Caption="Copy Request Setup" IsNewNode="True">
+      <Items IsNewNode="True">
+        <CustomUserControlViewItemWeb Id="uscCopyWorkflowSetup.ascx" CustomControlPath="~/UserControls/uscCopyWorkflowSetup.ascx" Caption="uscCopyWorkflowSetup.ascx" IsNewNode="True" />
+      </Items>
+    </DashboardView>
     <DashboardView Id="Disciplinary" Caption="Disciplinary" ImageName="analysis" IsNewNode="True">
       <Items IsNewNode="True">
         <CustomUserControlViewItemWeb Id="Disciplinary" CustomControlPath="~/UserControls/Reports/Analysis/Employees/uscRptDiscipilnary.ascx" Caption="Disciplinary" IsNewNode="True" />
@@ -1895,6 +1906,26 @@
         <ColumnInfo Id="Employee" LookupProperty="FullNameEn" />
       </Columns>
     </ListView>
+    <DetailView Id="EmployeeOvertime_DetailView">
+      <Items>
+        <PropertyEditor Id="Employee" LookupProperty="CodeWithFullNameEn" />
+      </Items>
+    </DetailView>
+    <ListView Id="EmployeeOvertime_ListView" DataAccessMode="Server" NewItemRowPosition="None">
+      <Columns>
+        <ColumnInfo Id="EmpCode" PropertyName="Employee.Code" Index="0" AllowEdit="False" IsNewNode="True" />
+        <ColumnInfo Id="Employee" LookupProperty="FullNameEn" Index="1" />
+        <ColumnInfo Id="EffectiveDate" Index="2" />
+        <ColumnInfo Id="OvertimeHours" Index="3" />
+        <ColumnInfo Id="ActualOvertimeHours" Index="4" />
+        <ColumnInfo Id="ApprovedOvertimeHours" Index="5" />
+      </Columns>
+    </ListView>
+    <DetailView Id="EmployeeRecurringPayment_DetailView">
+      <Items>
+        <PropertyEditor Id="WageType" DataSourceCriteriaProperty="" DataSourceCriteria="[IncludeInBasicPay] = False Or [IncludeInArrearPay] = False Or [IncludeInCalculatedPay] = False" />
+      </Items>
+    </DetailView>
     <DetailView Id="EmployeeSponsor_DetailView">
       <Items>
         <PropertyEditor Id="Sponsor" LookupEditorMode="Search" />

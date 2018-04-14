@@ -1717,17 +1717,9 @@
     <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeRecurringPayment" Caption="موظف الدفع متكرر">
       <OwnMembers>
         <Member Name="Amount" Caption="قيمة" />
-        <Member Name="Currency" Caption="عملة" />
         <Member Name="Employee" Caption="موظف" />
         <Member Name="EndDate" Caption="تاريخ الانتهاء" />
-        <Member Name="FirstPaymentDate" Caption="تاريخ الدفع الأول" />
-        <Member Name="FirstPaymentPeriod" Caption="مدة الدفع الأولى" />
         <Member Name="Locked" Caption="مقفل" />
-        <Member Name="PaymentInterval" Caption="الفاصل الزمني للدفع" />
-        <Member Name="PaymentIntervalPeriod" Caption="مدة الفاصل الزمني للدفع" />
-        <Member Name="PaymentModel" Caption="نموذج الدفع" />
-        <Member Name="RecurNumber" Caption="رقم متكرر" />
-        <Member Name="RecurUnit" Caption="وحدة متكرر" />
         <Member Name="StartDate" Caption="تاريخ البدء" />
         <Member Name="SysTenant" Caption="المستأجر النظام" />
         <Member Name="WageType" Caption="نوع أجرة" />
@@ -6047,14 +6039,6 @@
         <ColumnInfo Id="EndDate" Caption="End Date" />
         <ColumnInfo Id="WageType" Caption="Wage Type" />
         <ColumnInfo Id="Amount" Caption="Amount" />
-        <ColumnInfo Id="Currency" Caption="Currency" />
-        <ColumnInfo Id="RecurNumber" Caption="Recur Number" />
-        <ColumnInfo Id="RecurUnit" Caption="Recur Unit" />
-        <ColumnInfo Id="PaymentModel" Caption="Payment Model" />
-        <ColumnInfo Id="FirstPaymentDate" Caption="First Payment Date" />
-        <ColumnInfo Id="PaymentInterval" Caption="Payment Interval" />
-        <ColumnInfo Id="FirstPaymentPeriod" Caption="First Payment Period" />
-        <ColumnInfo Id="PaymentIntervalPeriod" Caption="Payment Interval Period" />
       </Columns>
     </ListView>
     <ListView Id="Employee_Rejoin_ListView" Caption="Employee Rejoin">
@@ -7979,17 +7963,9 @@
     <DetailView Id="EmployeeRecurringPayment_DetailView" Caption="Employee Recurring Payment">
       <Items>
         <PropertyEditor Id="Amount" Caption="Amount" />
-        <PropertyEditor Id="Currency" Caption="Currency" />
         <PropertyEditor Id="Employee" Caption="Employee" />
         <PropertyEditor Id="EndDate" Caption="End Date" />
-        <PropertyEditor Id="FirstPaymentDate" Caption="First Payment Date" />
-        <PropertyEditor Id="FirstPaymentPeriod" Caption="First Payment Period" />
         <PropertyEditor Id="Locked" Caption="Locked" />
-        <PropertyEditor Id="PaymentInterval" Caption="Payment Interval" />
-        <PropertyEditor Id="PaymentIntervalPeriod" Caption="Payment Interval Period" />
-        <PropertyEditor Id="PaymentModel" Caption="Payment Model" />
-        <PropertyEditor Id="RecurNumber" Caption="Recur Number" />
-        <PropertyEditor Id="RecurUnit" Caption="Recur Unit" />
         <PropertyEditor Id="StartDate" Caption="Start Date" />
         <PropertyEditor Id="SysTenant" Caption="Sys Tenant" />
         <PropertyEditor Id="WageType" Caption="Wage Type" />
@@ -8006,36 +7982,20 @@
       <Columns>
         <ColumnInfo Id="Locked" Caption="Locked" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
+        <ColumnInfo Id="Employee" Caption="Employee" />
         <ColumnInfo Id="StartDate" Caption="Start Date" />
         <ColumnInfo Id="EndDate" Caption="End Date" />
-        <ColumnInfo Id="Employee" Caption="Employee" />
         <ColumnInfo Id="WageType" Caption="Wage Type" />
         <ColumnInfo Id="Amount" Caption="Amount" />
-        <ColumnInfo Id="Currency" Caption="Currency" />
-        <ColumnInfo Id="RecurNumber" Caption="Recur Number" />
-        <ColumnInfo Id="RecurUnit" Caption="Recur Unit" />
-        <ColumnInfo Id="PaymentModel" Caption="Payment Model" />
-        <ColumnInfo Id="FirstPaymentDate" Caption="First Payment Date" />
-        <ColumnInfo Id="PaymentInterval" Caption="Payment Interval" />
-        <ColumnInfo Id="FirstPaymentPeriod" Caption="First Payment Period" />
-        <ColumnInfo Id="PaymentIntervalPeriod" Caption="Payment Interval Period" />
       </Columns>
     </ListView>
     <ListView Id="EmployeeRecurringPayment_LookupListView" Caption="Employee Recurring Payment">
       <Columns>
+        <ColumnInfo Id="Employee" Caption="Employee" />
         <ColumnInfo Id="StartDate" Caption="Start Date" />
         <ColumnInfo Id="EndDate" Caption="End Date" />
-        <ColumnInfo Id="Employee" Caption="Employee" />
         <ColumnInfo Id="WageType" Caption="Wage Type" />
         <ColumnInfo Id="Amount" Caption="Amount" />
-        <ColumnInfo Id="Currency" Caption="Currency" />
-        <ColumnInfo Id="RecurNumber" Caption="Recur Number" />
-        <ColumnInfo Id="RecurUnit" Caption="Recur Unit" />
-        <ColumnInfo Id="PaymentModel" Caption="Payment Model" />
-        <ColumnInfo Id="FirstPaymentDate" Caption="First Payment Date" />
-        <ColumnInfo Id="PaymentInterval" Caption="Payment Interval" />
-        <ColumnInfo Id="FirstPaymentPeriod" Caption="First Payment Period" />
-        <ColumnInfo Id="PaymentIntervalPeriod" Caption="Payment Interval Period" />
         <ColumnInfo Id="Locked" Caption="Locked" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
       </Columns>
