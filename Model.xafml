@@ -1308,7 +1308,7 @@
               </LayoutGroup>
               <LayoutGroup Id="DocumentRequest_col2" RelativeSize="47.004991680532449">
                 <LayoutItem Id="DocumentNum" ViewItem="DocumentNum" Index="2" RelativeSize="40.425531914893618" IsNewNode="True" />
-                <LayoutItem Id="Comments" RelativeSize="14.893617021276595" Index="3" Removed="True" />
+                <LayoutItem Id="Comments" RelativeSize="14.893617021276596" Index="3" Removed="True" />
                 <LayoutItem Id="DeliveryDate" RelativeSize="34.042553191489361" />
                 <LayoutItem Id="ReturnDate" RelativeSize="25.531914893617021" />
               </LayoutGroup>
@@ -1577,6 +1577,7 @@
         <ColumnInfo Id="FirstNameEn" Removed="True" />
       </Columns>
     </ListView>
+    <ListView Id="Employee_Overtime_ListView" InlineEditMode="Batch" />
     <ListView Id="Employee_Task_ListView">
       <Columns>
         <ColumnInfo Id="Comments" MaxLength="500" />
@@ -2362,13 +2363,13 @@
               </LayoutGroup>
               <LayoutGroup Id="LeaveRequest_col2" Direction="Horizontal" RelativeSize="0.84848484848484851" />
             </LayoutGroup>
-            <LayoutGroup Id="WorkflowRequest" RelativeSize="14.503816793893129" Removed="True">
-              <LayoutGroup Id="WorkflowRequest_col1" RelativeSize="50.256410256410255">
+            <LayoutGroup Id="WorkflowRequest" RelativeSize="14.50381679389313" Removed="True">
+              <LayoutGroup Id="WorkflowRequest_col1" RelativeSize="50.256410256410256">
                 <LayoutItem Id="RequestNumber" RelativeSize="27.272727272727273" Index="1" />
                 <LayoutItem Id="RequestStatus" RelativeSize="36.363636363636367" Index="2" />
                 <LayoutItem Id="WorkflowStep" RelativeSize="36.363636363636367" />
               </LayoutGroup>
-              <LayoutGroup Id="WorkflowRequest_col2" RelativeSize="49.743589743589745">
+              <LayoutGroup Id="WorkflowRequest_col2" RelativeSize="49.743589743589744">
                 <LayoutItem Id="ApproverJobTitle" Index="1" RelativeSize="27.272727272727273" />
                 <LayoutItem Id="CurrentWorkFlowRole" Index="2" RelativeSize="36.363636363636367" />
                 <LayoutItem Id="ApprovalProcessTime" RelativeSize="36.363636363636367" />
@@ -2730,7 +2731,7 @@
               <LayoutItem Id="RequestComments" ViewItem="RequestComments" SizeConstraintsType="Custom" MinSize="188, 35" Index="0" RelativeSize="49.015063731170336" IsNewNode="True" />
               <LayoutItem Id="WorkflowComments" ViewItem="WorkflowComments" Index="1" RelativeSize="50.984936268829664" IsNewNode="True" />
             </LayoutGroup>
-            <TabbedGroup Id="Item4" CaptionLocation="Top" Index="2" RelativeSize="12.995049504950495" IsNewNode="True">
+            <TabbedGroup Id="Item4" CaptionLocation="Top" Index="2" RelativeSize="12.995049504950496" IsNewNode="True">
               <LayoutGroup Id="Item3" ShowCaption="True" CaptionLocation="Top" Index="0" RelativeSize="100" Caption="Rejoining Detail" IsNewNode="True">
                 <LayoutGroup Id="Auto0878a7d8-e3fa-4011-9cfa-f2c799b54b51" ShowCaption="False" Caption="Auto0878a7d8-e3fa-4011-9cfa-f2c799b54b51(22)" Direction="Horizontal" Index="0" RelativeSize="47.945205479452056" IsNewNode="True">
                   <LayoutItem Id="RejoiningDate" ViewItem="RejoiningDate" Index="0" RelativeSize="50.059880239520957" IsNewNode="True" />
