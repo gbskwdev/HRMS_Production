@@ -49,6 +49,26 @@
         </LayoutGroup>
       </Layout>
     </DashboardView>
+    <DetailView Id="LeaveRequest_DetailView">
+      <Layout Id="Layout">
+        <LayoutGroup Id="Main">
+          <LayoutGroup Id="SimpleEditors">
+            <LayoutGroup Id="LeaveRequest">
+              <LayoutGroup Id="LeaveRequest_col1">
+                <LayoutGroup Id="Auto7ca608ee-34f9-46c7-9dc9-a0c50b089ce4">
+                  <LayoutGroup Id="Auto2e45528d-499d-4f34-9e40-3e90829800c5">
+                    <LayoutItem Id="attachment" ViewItem="attachment" />
+                    <LayoutGroup Id="Autoc6b6efe6-79f6-4c7f-8b69-52743564bc4a">
+                      <LayoutItem Id="DocumentAttachment" ViewItem="DocumentAttachment" />
+                    </LayoutGroup>
+                  </LayoutGroup>
+                </LayoutGroup>
+              </LayoutGroup>
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
     <DetailView Id="LeaveCancellationRequest_DetailView">
       <Layout Id="Layout">
         <LayoutGroup Id="Main">
@@ -106,11 +126,4 @@
       </Layout>
     </DetailView>
   </Views>
-  <BOModel Id="BOModel">
-    <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeRecurringPayment">
-      <OwnMembers Id="OwnMembers">
-        <Member Name="RecurNumber" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
-      </OwnMembers>
-    </Class>
-  </BOModel>
 </Application>

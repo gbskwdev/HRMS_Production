@@ -592,7 +592,7 @@
     <Class Name="HCM10.Module.BusinessObjects.Workflow.LeaveRequest">
       <OwnMembers>
         <Member Name="AbsenceHours" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
-        <Member Name="AbsenceType" LookupEditorMode="Search" />
+        <Member Name="AbsenceType" LookupEditorMode="Auto" />
         <Member Name="CalendarDays" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
         <Member Name="LeaveAmount" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
         <Member Name="LeaveBalanceAmount" EditMask="#,###,##0.##############################" DisplayFormat="{0:#,###,##0.##############################}" />
@@ -973,7 +973,8 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
-    <ListView Id="AbsenceType_LookupListView" AllowNew="False" />
+    <ListView Id="AbsenceType_ListView" AllowEdit="False" />
+    <ListView Id="AbsenceType_LookupListView" AllowNew="True" AllowEdit="True" />
     <DetailView Id="AccessUnit_DetailView" DefaultFocusedItem="NameEn" />
     <DashboardView Id="Analysis" Caption="Analysis" IsNewNode="True">
       <Items IsNewNode="True">
@@ -2218,7 +2219,7 @@
     <DetailView Id="LeaveRequest_DetailView" DefaultFocusedItem="Employee">
       <Items>
         <PropertyEditor Id="Employee" Index="1" />
-        <PropertyEditor Id="AbsenceType" Index="2" LookupEditorMode="AllItems" AllowEdit="True" DataSourcePropertyIsNullCriteria="[Include In Workflow] = True" DataSourcePropertyIsNullMode="CustomCriteria" DataSourceCriteria="[IncludeInWorkflow] = True" />
+        <PropertyEditor Id="AbsenceType" Index="2" LookupEditorMode="Auto" AllowEdit="True" DataSourcePropertyIsNullCriteria="[Include In Workflow] = True" DataSourcePropertyIsNullMode="CustomCriteria" DataSourceCriteria="[IncludeInWorkflow] = True" />
         <PropertyEditor Id="StartDate" Index="3" />
         <PropertyEditor Id="EndDate" Index="4" />
         <PropertyEditor Id="LeavePaymentType" Index="5" />

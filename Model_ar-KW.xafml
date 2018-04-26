@@ -6686,11 +6686,11 @@
     <ListView Id="Employee_Manager_ListView" Caption="مدير الموظفين">
       <Columns>
         <ColumnInfo Id="Employee" Caption="موظف" />
+        <ColumnInfo Id="EndDate" Caption="تاريخ الانتهاء" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="Manager" Caption="اسم المدير" />
         <ColumnInfo Id="StartDate" Caption="تاريخ البدء" />
-        <ColumnInfo Id="EndDate" Caption="تاريخ الانتهاء" />
       </Columns>
     </ListView>
     <ListView Id="Employee_OnHold_ListView" Caption="الموظف المعلَّق">
@@ -8355,12 +8355,12 @@
     </DetailView>
     <ListView Id="EmployeeManager_ListView" Caption="مدير الموظفين">
       <Columns>
+        <ColumnInfo Id="EndDate" Caption="تاريخ الانتهاء" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
         <ColumnInfo Id="SysTenant" Caption="Sys Tenant" />
         <ColumnInfo Id="Employee" Caption="موظف" />
         <ColumnInfo Id="Manager" Caption="اسم المدير" />
         <ColumnInfo Id="StartDate" Caption="تاريخ البدء" />
-        <ColumnInfo Id="EndDate" Caption="تاريخ الانتهاء" />
       </Columns>
     </ListView>
     <ListView Id="EmployeeManager_LookupListView" Caption="مدير الموظفين">
