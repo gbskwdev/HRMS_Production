@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="uscPayrollSheet.ascx.cs" Inherits="HCM10.Web.UserControls.Reports.Analysis.PayrollReport.uscPayrollSheet" %>
-<%@ Register Assembly="DevExpress.Web.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %> 
+<%@ Register Assembly="DevExpress.Web.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 
 <%@ Register Assembly="DevExpress.XtraCharts.v17.2.Web, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.XtraCharts.Web" TagPrefix="dx" %>
 <%@ Register Assembly="DevExpress.XtraCharts.v17.2, Version=17.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.XtraCharts" TagPrefix="dx" %>
@@ -59,25 +59,38 @@
                     </td>--%>
                 </tr>
             </table>
-             <br />
+            <br />
 
             <asp:Label ID="lblRecordsCount" CssClass="lblRecordsCount" runat="server"></asp:Label>
 
             <br />
             <br />
-            <div id="gridContainer" style="overflow: auto; visibility: hidden;">
-                <dx:ASPxGridView ID="ASPxGridView1" ClientInstanceName="grid" runat="server" OnDataBinding="ASPxGridView1_DataBinding" EnableCallBacks="true"
-                    EnableViewState="false" Width="100%" ClientSideEvents-EndCallback="function(s,e){CallbackPanel2.PerformCallback();}">
-                    <ClientSideEvents BeginCallback="function(s,e){ Set3CustomFilterParams();}" />
-                    <ClientSideEvents Init="OnInit" EndCallback="OnEndCallback" />
-                    <Settings ShowFilterRow="True" AutoFilterCondition="Contains" />
-                </dx:ASPxGridView>
-                <dx:ASPxGridViewExporter ID="gridExport1" runat="server" GridViewID="ASPxGridView1"></dx:ASPxGridViewExporter>
 
-            </div>
-            <dx:ASPxGlobalEvents ID="ge" runat="server">
+            <%--            <dx:ASPxGridView ID="ASPxGridView1" ClientInstanceName="grid" runat="server" OnDataBinding="ASPxGridView1_DataBinding" EnableCallBacks="true"
+                EnableViewState="false" Width="100%" ClientSideEvents-EndCallback="function(s,e){CallbackPanel2.PerformCallback();}">
+                <ClientSideEvents BeginCallback="function(s,e){ Set3CustomFilterParams();}" />
+                <ClientSideEvents Init="OnInit" EndCallback="OnEndCallback" />
+
+                <SettingsCustomizationDialog Enabled="True" />
+                <SettingsBehavior EnableCustomizationWindow="true" />
+                <SettingsPager AlwaysShowPager="True"></SettingsPager>
+                <Settings ShowFilterRow="True" AutoFilterCondition="Contains" />
+            </dx:ASPxGridView>
+            --%>
+
+            <dx:ASPxGridView ID="ASPxGridView1" runat="server" Theme="MetropolisBlue" OnDataBinding="ASPxGridView1_DataBinding" EnableCallBacks="true" EnableViewState="false"
+                OnDataBound="ASPxGridView1_DataBound" Styles-AlternatingRow-Enabled="true" ClientInstanceName="ASPxGridView1" Settings-VerticalScrollBarStyle="Standard">
+
+                <SettingsCustomizationDialog Enabled="True" />
+                <SettingsBehavior EnableCustomizationWindow="true" />
+                <SettingsPager AlwaysShowPager="True"></SettingsPager>
+                <Settings ShowFilterRow="True" AutoFilterCondition="Contains" />
+            </dx:ASPxGridView>
+            <dx:ASPxGridViewExporter ID="gridExport1" runat="server" GridViewID="ASPxGridView1"></dx:ASPxGridViewExporter>
+
+            <%--<dx:ASPxGlobalEvents ID="ge" runat="server">
                 <ClientSideEvents ControlsInitialized="OnControlsInitialized" />
-            </dx:ASPxGlobalEvents>
+            </dx:ASPxGlobalEvents>--%>
             <br />
         </dx:PanelContent>
     </PanelCollection>

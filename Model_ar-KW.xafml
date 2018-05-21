@@ -3851,6 +3851,7 @@
           <Item Id="PayrollEngine" Caption="محرك المرتبات" />
           <Item Id="SalaryRegister_ListView" Caption="سجلات الرواتب" />
           <Item Id="BankFile" Caption="ملف البنك" />
+          <Item Id="CostingFile" Caption="ملف البنك" />
           <Item Id="RosterSchedule" Caption="جدول ورديات العمل" />
         </Items>
       </Item>
@@ -3954,14 +3955,14 @@
             <Items>
               <Item Id="AbsenceDeductionRule_ListView" Caption="قاعدة الخصم على الغياب" />
               <Item Id="AbsencePayment_ListView" Caption="نوع الإجازة" />
-              <Item Id="AbsenceType_ListView" Caption="نوع الإجازة" />
               <Item Id="AttendanceType_ListView" Caption="نوع الحضور" />
-              <Item Id="EmployeeGroup_ListView" Caption="الملف الراتب" />
               <Item Id="GratuityAccrualSummary_ListView" Caption="ملخص استحقاق الإجازات" />
               <Item Id="LeaveAccrualSummary_ListView" Caption="منطقة كشف الرواتب" />
+              <Item Id="AbsenceType_ListView" Caption="نوع الإجازة" />
               <Item Id="PayrollArea_ListView" Caption="تقويم كشف الرواتب" />
               <Item Id="PayrollCalendar_ListView" Caption="تقويم كشوف المرتبات" />
               <Item Id="PayrollPeriod_ListView" Caption="رواتب المدة" />
+              <Item Id="EmployeeGroup_ListView" Caption="الملف الراتب" />
               <Item Id="SimulationSalaryRegister_ListView" Caption="سجل راتب المحاكاة" />
               <Item Id="SponsorBank_ListView" Caption="البنك الراعي" />
               <Item Id="TicketAccrualSummary_ListView" Caption="Ticket Accrual Summary" />

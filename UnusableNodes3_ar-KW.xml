@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application>
+  <Views Id="Views">
+    <ListView Id="Employee_AbsAdjust_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="QuotaAccrued" Caption="Quota Accrued" />
+        <ColumnInfo Id="LeavePaymentType" Caption="Leave Payment Type" />
+      </Columns>
+    </ListView>
+    <DetailView Id="EmployeeAbsAdjustment_DetailView">
+      <Items Id="Items">
+        <PropertyEditor Id="LeavePaymentType" Caption="Leave Payment Type" />
+        <PropertyEditor Id="QuotaAccrued" Caption="Quota Accrued" />
+      </Items>
+    </DetailView>
+    <ListView Id="EmployeeAbsAdjustment_ListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="QuotaAccrued" Caption="Quota Accrued" />
+        <ColumnInfo Id="LeavePaymentType" Caption="Leave Payment Type" />
+      </Columns>
+    </ListView>
+    <ListView Id="EmployeeAbsAdjustment_LookupListView">
+      <Columns Id="Columns">
+        <ColumnInfo Id="QuotaAccrued" Caption="Quota Accrued" />
+        <ColumnInfo Id="LeavePaymentType" Caption="Leave Payment Type" />
+      </Columns>
+    </ListView>
+  </Views>
+  <BOModel Id="BOModel">
+    <Class Name="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeAbsAdjustment">
+      <OwnMembers Id="OwnMembers">
+        <Member Name="QuotaAccrued" Caption="الحصة المستحقة" />
+        <Member Name="LeavePaymentType" Caption="إجازة نوع الدفع" />
+      </OwnMembers>
+    </Class>
+  </BOModel>
+</Application>

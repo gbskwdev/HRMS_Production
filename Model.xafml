@@ -746,6 +746,7 @@
           <Item Id="PayrollEngine" Caption="Payroll Engine" ViewId="PayrollEngine" ImageName="payrollengine" Index="3" IsNewNode="True" />
           <Item Id="SalaryRegister_ListView" ViewId="SalaryRegister_ListView" ObjectKey="" Index="4" IsNewNode="True" />
           <Item Id="BankFile" ImageName="bankfile" ViewId="BankFile" Index="5" IsNewNode="True" />
+          <Item Id="CostingFile" ImageName="bankfile" Index="5" Caption="Costing File" ViewId="CostingFile" IsNewNode="True" />
           <Item Id="RosterSchedule" ViewId="RosterSchedule" IsNewNode="True" />
         </Items>
       </Item>
@@ -1173,6 +1174,11 @@
       </Layout>
     </DetailView>
     <DetailView Id="Bank_DetailView" DefaultFocusedItem="NameEn" />
+    <ListView Id="Bank_LookupListView">
+      <Columns>
+        <ColumnInfo Id="NameAr" PropertyName="NameAr" IsNewNode="True" />
+      </Columns>
+    </ListView>
     <DashboardView Id="BankFile" Caption="Bank File" ImageName="bankfile" IsNewNode="True">
       <Items IsNewNode="True">
         <CustomUserControlViewItemWeb Id="uscBankFile" CustomControlPath="~/UserControls/uscBankFile.ascx" IsNewNode="True" />
@@ -1201,6 +1207,11 @@
     </DashboardView>
     <DetailView Id="City_DetailView" DefaultFocusedItem="NameEn" />
     <DetailView Id="ContractType_DetailView" DefaultFocusedItem="NameEn" />
+    <DashboardView Id="CostingFile" Caption="CostingFile" IsNewNode="True">
+      <Items IsNewNode="True">
+        <CustomUserControlViewItemWeb Id="uscCostingFile" CustomControlPath="~/UserControls/uscCostingFile.ascx" IsNewNode="True" />
+      </Items>
+    </DashboardView>
     <DashboardView Id="Disciplinary" Caption="Disciplinary" ImageName="analysis" IsNewNode="True">
       <Items IsNewNode="True">
         <CustomUserControlViewItemWeb Id="Disciplinary" CustomControlPath="~/UserControls/Reports/Analysis/Employees/uscRptDiscipilnary.ascx" Caption="Disciplinary" IsNewNode="True" />
@@ -1218,50 +1229,50 @@
       </Items>
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" RelativeSize="84.9009900990099">
-            <LayoutGroup Id="DisciplinaryRequest" RelativeSize="29.300291545189506" Direction="Vertical">
-              <LayoutGroup Id="Autoe9551cd4-441b-4b48-8e37-ed2aaed4f6f8" ShowCaption="False" Caption="Autoe9551cd4-441b-4b48-8e37-ed2aaed4f6f8(4)" Index="0" RelativeSize="100" IsNewNode="True">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="84.398976982097182">
+            <LayoutGroup Id="DisciplinaryRequest" RelativeSize="27.878787878787879" Direction="Vertical">
+              <LayoutGroup Id="Autoe9551cd4-441b-4b48-8e37-ed2aaed4f6f8" ShowCaption="False" Caption="Autoe9551cd4-441b-4b48-8e37-ed2aaed4f6f8(4)" Index="0" RelativeSize="98.666666666666671" IsNewNode="True">
                 <LayoutGroup Id="Auto31f68fe6-f7c5-4777-ba92-acf429f6af61" ShowCaption="False" Caption="Auto31f68fe6-f7c5-4777-ba92-acf429f6af61(6)" Direction="Vertical" Index="0" RelativeSize="100" IsNewNode="True">
                   <LayoutGroup Id="Auto7e079bbd-5b1c-47b3-9d08-18f9195dfb05" ShowCaption="False" Caption="Auto7e079bbd-5b1c-47b3-9d08-18f9195dfb05(7)" Index="0" RelativeSize="100" Direction="Vertical" IsNewNode="True">
-                    <LayoutGroup Id="Auto888bea78-bd1f-4d1a-b660-c438e9eac8d7" ShowCaption="False" Caption="Auto888bea78-bd1f-4d1a-b660-c438e9eac8d7(7)" Index="0" RelativeSize="100" IsNewNode="True">
-                      <LayoutGroup Id="Item1" ShowCaption="True" Caption="Disciplinary Request" CaptionLocation="Top" Index="0" RelativeSize="100" IsNewNode="True">
-                        <LayoutGroup Id="Auto66817805-e183-4f2b-9d9c-b5bedabdbca6" ShowCaption="False" Caption="Auto66817805-e183-4f2b-9d9c-b5bedabdbca6(9)" Direction="Horizontal" Index="0" RelativeSize="21.739130434782609" IsNewNode="True">
-                          <LayoutItem Id="Employee" ViewItem="Employee" Index="0" RelativeSize="49.733096085409251" IsNewNode="True" />
-                          <LayoutItem Id="Location" ViewItem="Location" Index="1" RelativeSize="50.266903914590749" IsNewNode="True" />
-                        </LayoutGroup>
-                        <LayoutGroup Id="Auto2b00fe6e-73fa-41b5-889e-de9e2456c678" ShowCaption="False" Caption="Auto2b00fe6e-73fa-41b5-889e-de9e2456c678(12)" Index="1" RelativeSize="78.260869565217391" IsNewNode="True">
-                          <LayoutGroup Id="Autoa91ceb88-506b-44f2-81b3-6f028f6b0807" ShowCaption="False" Caption="Autoa91ceb88-506b-44f2-81b3-6f028f6b0807(13)" Direction="Horizontal" Index="0" RelativeSize="26.19047619047619" IsNewNode="True">
-                            <LayoutItem Id="DisciplinaryDate" ViewItem="DisciplinaryDate" Index="0" RelativeSize="29.448398576512457" IsNewNode="True" />
-                            <LayoutItem Id="DiscplinaryTime" ViewItem="DiscplinaryTime" Index="1" RelativeSize="20.284697508896798" IsNewNode="True" />
-                            <LayoutItem Id="ReportedBy" ViewItem="ReportedBy" Index="2" RelativeSize="50.266903914590749" IsNewNode="True" />
-                          </LayoutGroup>
-                          <LayoutGroup Id="Autoea4b7019-91c3-4c6f-9b10-3ee606f68a5e" ShowCaption="False" Caption="Autoea4b7019-91c3-4c6f-9b10-3ee606f68a5e(17)" Direction="Horizontal" Index="1" RelativeSize="73.80952380952381" IsNewNode="True">
-                            <LayoutItem Id="RequestComments" ViewItem="RequestComments" Index="0" RelativeSize="49.644128113879006" IsNewNode="True" />
-                            <LayoutItem Id="WorkflowComments" ViewItem="WorkflowComments" Index="1" RelativeSize="50.355871886120994" IsNewNode="True" />
-                          </LayoutGroup>
-                        </LayoutGroup>
+                    <LayoutGroup Id="Auto888bea78-bd1f-4d1a-b660-c438e9eac8d7" ShowCaption="False" Caption="Auto888bea78-bd1f-4d1a-b660-c438e9eac8d7(7)" Index="0" RelativeSize="100" Direction="Horizontal" IsNewNode="True">
+                      <LayoutGroup Id="Autod211c477-0fd9-40b1-8cc9-3d8a66c8d29b" ShowCaption="False" Caption="" Index="0" RelativeSize="47.343378271213325" IsNewNode="True">
+                        <LayoutItem Id="Employee" ViewItem="Employee" Index="0" RelativeSize="21.621621621621621" IsNewNode="True" />
+                        <LayoutItem Id="DisciplinaryDate" ViewItem="DisciplinaryDate" Index="1" RelativeSize="16.216216216216218" IsNewNode="True" />
+                        <LayoutItem Id="DiscplinaryTime" ViewItem="DiscplinaryTime" Index="2" RelativeSize="16.216216216216218" IsNewNode="True" />
+                        <LayoutItem Id="RequestComments" ViewItem="RequestComments" Index="3" RelativeSize="45.945945945945944" IsNewNode="True" />
+                      </LayoutGroup>
+                      <LayoutGroup Id="Auto02b15366-8bb1-41fc-802e-72cf2b7ed56d" ShowCaption="False" Caption="" Index="1" RelativeSize="52.656621728786675" IsNewNode="True">
+                        <LayoutItem Id="Location" ViewItem="Location" Index="0" RelativeSize="21.621621621621621" IsNewNode="True" />
+                        <LayoutItem Id="WorkLocation" ViewItem="WorkLocation" Index="1" RelativeSize="16.216216216216218" IsNewNode="True" />
+                        <LayoutItem Id="ReportedBy" ViewItem="ReportedBy" Index="2" RelativeSize="16.216216216216218" IsNewNode="True" />
+                        <LayoutItem Id="WorkflowComments" ViewItem="WorkflowComments" Index="3" RelativeSize="45.945945945945944" IsNewNode="True" />
                       </LayoutGroup>
                     </LayoutGroup>
                   </LayoutGroup>
                 </LayoutGroup>
               </LayoutGroup>
-              <LayoutItem Id="ReportedBy" Index="2" RelativeSize="32.53012048192771" Removed="True" />
-              <LayoutItem Id="DisciplinaryDate" Removed="True" />
-              <LayoutItem Id="DiscplinaryTime" RelativeSize="28.91566265060241" Removed="True" />
-              <LayoutItem Id="Location" Removed="True" />
+              <LayoutGroup Id="DisciplinaryRequest_col1" Index="1" RelativeSize="28.365384615384617" Caption="DisciplinaryRequest_col1" Direction="Horizontal" Removed="True">
+                <LayoutItem Id="DisciplinaryDate" RelativeSize="100" Removed="True" />
+                <LayoutItem Id="DiscplinaryTime" RelativeSize="98.305084745762713" Removed="True" />
+                <LayoutItem Id="Location" RelativeSize="96.610169491525426" Removed="True" />
+              </LayoutGroup>
+              <LayoutGroup Id="DisciplinaryRequest_col2" Caption="DisciplinaryRequest_col2" Index="1" RelativeSize="1.3333333333333333" Direction="Horizontal">
+                <LayoutItem Id="ReportedBy" Removed="True" />
+                <LayoutItem Id="WorkLocation" RelativeSize="100" Removed="True" />
+              </LayoutGroup>
             </LayoutGroup>
-            <LayoutGroup Id="DisciplinaryRequestDetail" ShowCaption="True" Caption="Disciplinary Request Detail" Index="1" RelativeSize="70.699708454810491" IsNewNode="True">
+            <LayoutGroup Id="DisciplinaryRequestDetail" ShowCaption="True" Caption="Disciplinary Request Detail" Index="1" RelativeSize="72.121212121212125" IsNewNode="True">
               <LayoutItem Id="DisciplinaryRequestDetail" ViewItem="DisciplinaryRequestDetail" Index="0" RelativeSize="100" IsNewNode="True" />
             </LayoutGroup>
             <LayoutGroup Id="WorkflowRequest" Removed="True" />
           </LayoutGroup>
-          <TabbedGroup Id="Tabs" RelativeSize="15.099009900990099" Index="1">
+          <TabbedGroup Id="Tabs" RelativeSize="15.601023017902813" Index="1">
             <LayoutGroup Id="WorkflowRequest" ShowCaption="True" Caption="Workflow Request" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
-              <LayoutGroup Id="WorkflowRequest_col1" ShowCaption="False" Index="0" RelativeSize="46.875" IsNewNode="True">
+              <LayoutGroup Id="WorkflowRequest_col1" ShowCaption="False" Index="0" RelativeSize="44.470962609387428" IsNewNode="True">
                 <LayoutItem Id="RequestNumber" ViewItem="RequestNumber" Index="0" RelativeSize="40.506329113924053" IsNewNode="True" />
                 <LayoutItem Id="RequestStatus" ViewItem="RequestStatus" Index="1" RelativeSize="59.493670886075947" IsNewNode="True" />
               </LayoutGroup>
-              <LayoutGroup Id="WorkflowRequest_col2" ShowCaption="False" Index="1" RelativeSize="53.125" IsNewNode="True">
+              <LayoutGroup Id="WorkflowRequest_col2" ShowCaption="False" Index="1" RelativeSize="55.529037390612572" IsNewNode="True">
                 <LayoutItem Id="WorkflowStep" ViewItem="WorkflowStep" Index="0" RelativeSize="40.506329113924053" IsNewNode="True" />
                 <LayoutItem Id="CurrentWorkFlowRole" ViewItem="CurrentWorkFlowRole" Index="1" RelativeSize="59.493670886075947" IsNewNode="True" />
               </LayoutGroup>
@@ -1277,6 +1288,9 @@
             </LayoutGroup>
             <LayoutGroup Id="RequestLog" Index="3" RelativeSize="100">
               <LayoutItem Id="RequestLog" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="WFReadLog" RelativeSize="100">
+              <LayoutItem Id="WFReadLog" RelativeSize="100" />
             </LayoutGroup>
           </TabbedGroup>
           <LayoutGroup Id="SizeableEditors" Caption="SizeableEditors" RelativeSize="21.03960396039604" Direction="Horizontal" Removed="True">
@@ -1582,6 +1596,14 @@
         <ColumnInfo Id="CurrentBranch" Index="11" />
         <ColumnInfo Id="CurrentCostCenter" Index="12" />
         <ColumnInfo Id="CurrentJobtitle" Index="13" />
+        <ColumnInfo Id="CodeWithFullNameEn" Index="15" />
+        <ColumnInfo Id="OrgLevel1" Index="16" />
+        <ColumnInfo Id="OrgLevel2" Index="17" />
+        <ColumnInfo Id="OrgLevel3" Index="18" />
+        <ColumnInfo Id="OrgLevel4" Index="19" />
+        <ColumnInfo Id="OrgLevel5" Index="20" />
+        <ColumnInfo Id="OrgLevel6" Index="21" />
+        <ColumnInfo Id="OrgLevel7" Index="22" />
       </Columns>
     </ListView>
     <ListView Id="Employee_LookupListView" PreviewColumnName="">
@@ -1666,41 +1688,45 @@
       </Items>
       <Layout>
         <LayoutGroup Id="Main" RelativeSize="100">
-          <LayoutGroup Id="SimpleEditors" ShowCaption="False" Index="0" RelativeSize="21.03960396039604" IsNewNode="True" Removed="True">
+          <LayoutGroup Id="SimpleEditors" ShowCaption="False" Index="0" RelativeSize="20.668316831683168" IsNewNode="True" Removed="True">
             <LayoutGroup Id="EmployeeDisciplinary" ShowCaption="True" Caption="Employee Disciplinary" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True">
-              <LayoutGroup Id="EmployeeDisciplinary_col1" ShowCaption="False" Index="0" RelativeSize="31.2874251497006" IsNewNode="True">
-                <LayoutItem Id="Employee" ViewItem="Employee" Index="0" RelativeSize="24.060150375939848" IsNewNode="True" />
-                <LayoutGroup Id="Auto0ac66457-b230-4a3a-be90-fae116b250e8" ShowCaption="False" Caption="Auto0ac66457-b230-4a3a-be90-fae116b250e8(6)" Index="1" RelativeSize="75.939849624060145" IsNewNode="True">
-                  <LayoutGroup Id="Auto65953620-1b11-4377-82c4-e6cb2edcef89" ShowCaption="False" Caption="Auto65953620-1b11-4377-82c4-e6cb2edcef89(7)" Index="0" RelativeSize="100" Direction="Vertical" IsNewNode="True">
-                    <LayoutGroup Id="Auto4ba37816-4533-47ef-a327-e9e838984562" ShowCaption="False" Caption="Auto4ba37816-4533-47ef-a327-e9e838984562(8)" Direction="Horizontal" Index="0" RelativeSize="35.643564356435647" IsNewNode="True">
-                      <LayoutItem Id="DisciplinaryDate" ViewItem="DisciplinaryDate" Index="0" RelativeSize="49.760765550239235" IsNewNode="True" />
-                      <LayoutItem Id="DisciplinaryTime" ViewItem="DisciplinaryTime" Index="1" RelativeSize="50.239234449760765" IsNewNode="True" />
+              <LayoutGroup Id="EmployeeDisciplinary_col1" ShowCaption="False" Index="0" RelativeSize="64.7339158061954" Direction="Horizontal" IsNewNode="True">
+                <LayoutGroup Id="Auto555ed075-f68b-4927-9f5b-29acd614910b" ShowCaption="False" Caption="Auto555ed075-f68b-4927-9f5b-29acd614910b(5)" Index="0" RelativeSize="51.533742331288344" IsNewNode="True">
+                  <LayoutItem Id="Employee" ViewItem="Employee" Index="0" RelativeSize="24.615384615384617" IsNewNode="True" />
+                  <LayoutGroup Id="Auto0ac66457-b230-4a3a-be90-fae116b250e8" ShowCaption="False" Caption="Auto0ac66457-b230-4a3a-be90-fae116b250e8(6)" Index="1" RelativeSize="75.384615384615387" IsNewNode="True">
+                    <LayoutGroup Id="Auto65953620-1b11-4377-82c4-e6cb2edcef89" ShowCaption="False" Caption="Auto65953620-1b11-4377-82c4-e6cb2edcef89(7)" Index="0" RelativeSize="100" IsNewNode="True">
+                      <LayoutGroup Id="Auto4ba37816-4533-47ef-a327-e9e838984562" ShowCaption="False" Caption="Auto4ba37816-4533-47ef-a327-e9e838984562(8)" Direction="Horizontal" Index="0" RelativeSize="36.734693877551024" IsNewNode="True">
+                        <LayoutItem Id="DisciplinaryDate" ViewItem="DisciplinaryDate" Index="0" RelativeSize="50" IsNewNode="True" />
+                        <LayoutItem Id="DisciplinaryTime" ViewItem="DisciplinaryTime" Index="1" RelativeSize="50" IsNewNode="True" />
+                      </LayoutGroup>
+                      <LayoutItem Id="Comments" ViewItem="Comments" Index="1" RelativeSize="63.265306122448976" IsNewNode="True" />
                     </LayoutGroup>
-                    <LayoutItem Id="Comments" ViewItem="Comments" Index="1" RelativeSize="64.356435643564353" IsNewNode="True" />
                   </LayoutGroup>
+                </LayoutGroup>
+                <LayoutGroup Id="Auto1eb96511-a61e-4ca8-ba80-2a3eae0171f5" ShowCaption="False" Caption="Auto1eb96511-a61e-4ca8-ba80-2a3eae0171f5(13)" Index="1" RelativeSize="48.466257668711656" IsNewNode="True">
+                  <LayoutItem Id="Location" ViewItem="Location" Index="0" RelativeSize="24.615384615384617" IsNewNode="True" />
+                  <LayoutItem Id="WorkLocation" ViewItem="WorkLocation" Index="1" RelativeSize="18.46153846153846" IsNewNode="True" />
+                  <LayoutItem Id="Item2" Index="2" RelativeSize="56.92307692307692" IsNewNode="True" />
                 </LayoutGroup>
               </LayoutGroup>
-              <LayoutGroup Id="EmployeeDisciplinary_col2" ShowCaption="False" Index="1" RelativeSize="68.7125748502994" IsNewNode="True">
-                <LayoutGroup Id="Auto6d556ab0-305c-4ee0-b9ef-2e21037dcc44" ShowCaption="False" Caption="Auto6d556ab0-305c-4ee0-b9ef-2e21037dcc44(11)" Direction="Horizontal" Index="0" RelativeSize="44.3609022556391" IsNewNode="True">
-                  <LayoutGroup Id="Auto67a8fa91-8ae1-40d5-bb8e-44baa5838f37" ShowCaption="False" Caption="Auto67a8fa91-8ae1-40d5-bb8e-44baa5838f37(12)" Index="0" RelativeSize="43.246187363834423" IsNewNode="True">
-                    <LayoutItem Id="Location" ViewItem="Location" Index="0" RelativeSize="54.237288135593218" IsNewNode="True" />
-                    <LayoutItem Id="WLSendToEmp" ViewItem="WLSendToEmp" Index="1" RelativeSize="45.762711864406782" IsNewNode="True" />
-                  </LayoutGroup>
-                  <LayoutGroup Id="Autobc896722-0ea4-49d6-b31a-604b2f824146" ShowCaption="False" Caption="Autobc896722-0ea4-49d6-b31a-604b2f824146(15)" Index="1" RelativeSize="56.753812636165577" Direction="Vertical" IsNewNode="True">
-                    <LayoutItem Id="ReportedBy" ViewItem="ReportedBy" Index="0" RelativeSize="54.237288135593218" IsNewNode="True" />
-                    <LayoutItem Id="WLRecvFromEmp" ViewItem="WLRecvFromEmp" Index="1" RelativeSize="45.762711864406782" IsNewNode="True" />
-                  </LayoutGroup>
+              <LayoutGroup Id="EmployeeDisciplinary_col2" ShowCaption="False" Index="1" RelativeSize="35.266084193804609" Direction="Horizontal" IsNewNode="True">
+                <LayoutGroup Id="Auto62461f8a-486c-4bfe-91fa-fe02c2d3cc42" ShowCaption="False" Caption="Auto62461f8a-486c-4bfe-91fa-fe02c2d3cc42(20)" Index="0" RelativeSize="99.549549549549553" IsNewNode="True">
+                  <LayoutItem Id="ReportedBy" ViewItem="ReportedBy" Index="0" RelativeSize="24.615384615384617" IsNewNode="True" />
+                  <LayoutItem Id="WLSendToEmp" ViewItem="WLSendToEmp" Index="1" RelativeSize="16.153846153846153" IsNewNode="True" />
+                  <LayoutItem Id="WLRecvFromEmp" ViewItem="WLRecvFromEmp" Index="2" RelativeSize="16.153846153846153" IsNewNode="True" />
+                  <LayoutItem Id="Item3" Index="3" RelativeSize="43.07692307692308" IsNewNode="True" />
                 </LayoutGroup>
-                <LayoutGroup Id="Auto8eefc663-6aac-4fe3-8d5a-9fd611fd13ea" ShowCaption="False" Caption="Auto8eefc663-6aac-4fe3-8d5a-9fd611fd13ea(14)" Index="1" RelativeSize="54.13533834586466" Direction="Horizontal" IsNewNode="True" />
-                <LayoutItem Id="WLRecvFromEmp" ViewItem="WLRecvFromEmp" Index="2" RelativeSize="1.5037593984962405" IsNewNode="True" />
+                <LayoutGroup Id="Auto6d556ab0-305c-4ee0-b9ef-2e21037dcc44" ShowCaption="False" Caption="Auto6d556ab0-305c-4ee0-b9ef-2e21037dcc44(11)" Direction="Vertical" Index="1" RelativeSize="0.45045045045045046" IsNewNode="True">
+                  <LayoutGroup Id="Auto67a8fa91-8ae1-40d5-bb8e-44baa5838f37" ShowCaption="False" Caption="Auto67a8fa91-8ae1-40d5-bb8e-44baa5838f37(12)" Direction="Horizontal" Index="0" RelativeSize="100" IsNewNode="True" />
+                </LayoutGroup>
               </LayoutGroup>
             </LayoutGroup>
           </LayoutGroup>
           <LayoutGroup Id="Autobafe2c42-4ea3-4a1d-9ea0-ad7d47743344" ShowCaption="False" Caption="Autobafe2c42-4ea3-4a1d-9ea0-ad7d47743344(22)" Direction="Horizontal" Index="1" RelativeSize="4.0841584158415838" IsNewNode="True">
-            <LayoutItem Id="Attachment" ViewItem="Attachment" Index="0" RelativeSize="98.82352941176471" IsNewNode="True" />
-            <LayoutItem Id="Item1" Index="1" RelativeSize="1.1764705882352942" IsNewNode="True" />
+            <LayoutItem Id="Attachment" ViewItem="Attachment" Index="0" RelativeSize="96.414653156664073" IsNewNode="True" />
+            <LayoutItem Id="Item1" Index="1" RelativeSize="3.5853468433359312" IsNewNode="True" />
           </LayoutGroup>
-          <LayoutGroup Id="DisciplinaryDetail_Group" Direction="Vertical" RelativeSize="74.876237623762378" Index="2" Caption="Disciplinary Details">
+          <LayoutGroup Id="DisciplinaryDetail_Group" Direction="Vertical" RelativeSize="75.247524752475243" Index="2" Caption="Disciplinary Details">
             <LayoutItem Id="DisciplinaryDetail" RelativeSize="100" />
           </LayoutGroup>
           <LayoutGroup Id="SizeableEditors" Caption="Comments" RelativeSize="14.975247524752476" Direction="Horizontal" Removed="True">
@@ -1723,8 +1749,8 @@
         <ColumnInfo Id="DisciplinaryDate" Width="99" SortIndex="0" SortOrder="Ascending" />
         <ColumnInfo Id="DisciplinaryTime" Index="4" Width="98" />
         <ColumnInfo Id="ReportedBy" Index="5" />
-        <ColumnInfo Id="WLSendToEmp" Width="81" />
         <ColumnInfo Id="Comments" Index="6" Width="137" />
+        <ColumnInfo Id="WLSendToEmp" Width="81" />
       </Columns>
     </ListView>
     <DetailView Id="EmployeeDisciplinaryDetail_DetailView">
@@ -2537,7 +2563,7 @@
         </LayoutGroup>
       </Layout>
     </DashboardView>
-    <DashboardView Id="MyDashboardView" ImageName="document" Caption="Document Dashboard">
+    <DashboardView Id="MyDashboardView" ImageName="document" Caption="Document Dashboard" AllowNew="False" AllowDelete="False">
       <Items>
         <KpiDashboardViewItem Id="Age" Removed="True" />
         <DashboardViewItem Id="dEmpList" Criteria="AddDays([ExpiryDate], - [DocumentType.NotificationPeriod]) &lt;= LocalDateTimeToday() And [ExpiryDate] &gt;= LocalDateTimeToday()" />
