@@ -3851,7 +3851,6 @@
           <Item Id="PayrollEngine" Caption="محرك المرتبات" />
           <Item Id="SalaryRegister_ListView" Caption="سجلات الرواتب" />
           <Item Id="BankFile" Caption="ملف البنك" />
-          <Item Id="CostingFile" Caption="ملف البنك" />
           <Item Id="RosterSchedule" Caption="جدول ورديات العمل" />
         </Items>
       </Item>
@@ -11889,12 +11888,12 @@
       <Columns>
         <ColumnInfo Id="Address" Caption="عنوان" />
         <ColumnInfo Id="Locked" Caption="مقفل" />
-        <ColumnInfo Id="OrgUnitType" Caption="Org Unit Type" />
         <ColumnInfo Id="NameEn" Caption="الاسم باللغة الإنجليزية" />
         <ColumnInfo Id="Code" Caption="رمز" />
         <ColumnInfo Id="NameAr" Caption="الاسم باللغة العربية" />
-        <ColumnInfo Id="ParentOrgUnit" Caption="Parent Org Unit" />
+        <ColumnInfo Id="OrgUnitType" Caption="Org Unit Type" />
         <ColumnInfo Id="PayrollArea" Caption="منطقة كشف الرواتب" />
+        <ColumnInfo Id="ParentOrgUnit" Caption="Parent Org Unit" />
         <ColumnInfo Id="Logo" Caption="شعار" />
       </Columns>
     </ListView>
