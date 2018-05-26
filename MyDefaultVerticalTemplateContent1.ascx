@@ -10,6 +10,13 @@
     TagPrefix="xaf" %>
 <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
 
+<style>
+    .dxrd-preview.dxrd-designer-wrapper .dxrd-right-panel {
+    max-width: 85% !important;
+    width: 70% !important;
+}
+</style>
+
 <input type="hidden" id="direction" value="ltr" />
 
 <xaf:XafUpdatePanel ID="UPPopupWindowControl" runat="server">

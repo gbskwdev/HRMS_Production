@@ -3872,6 +3872,7 @@
                   <Item Id="EmployeeDeduction" Caption="الخصم للموظف" />
                   <Item Id="EmployeeIncentive" ToolTip="حافز الموظف" Caption="حافز الموظف" />
                   <Item Id="EmpNonResumption" ToolTip="موظف غير استرداد" Caption="موظف غير استرداد" />
+                  <Item Id="EmpOvertime" Caption="الغياب سجل من قبل الإدارات" ToolTip="موظف يغادر قسم الحكمة" />
                   <Item Id="EmpResumption" ToolTip="استئناف الموظف" Caption="استئناف الموظف" />
                   <Item Id="ExitStaff" Caption="خروج الموظفين" />
                   <Item Id="LeaveByDept" Caption="الغياب سجل من قبل الإدارات" ToolTip="موظف يغادر قسم الحكمة" />
@@ -9778,6 +9779,7 @@
         <CustomUserControlViewItemWeb Id="EmpNonResumption" Caption="موظف غير استرداد" />
       </Items>
     </DashboardView>
+    <DashboardView Id="EmpOvertime" Caption="الغياب سجل من قبل الإدارات" />
     <DetailView Id="EmpPerformanceHistory_DetailView" Caption="Emp Performance History">
       <Items>
         <PropertyEditor Id="Description" Caption="وصف" />

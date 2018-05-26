@@ -768,6 +768,7 @@
                   <Item Id="EmployeeDeduction" ImageName="analysis" Caption="Employee Deduction" ToolTip="All Deductions of Employee" ViewId="EmployeeDeduction" IsNewNode="True" />
                   <Item Id="EmployeeIncentive" ToolTip="Employee Incentive" Caption="Employee Incentive" ImageName="Analysis" ViewId="EmployeeIncentive" IsNewNode="True" />
                   <Item Id="EmpNonResumption" ToolTip="Employee NonResumption" Caption="Employee NonResumption" ImageName="Analysis" ViewId="EmpNonResumption" IsNewNode="True" />
+                  <Item Id="EmpOvertime" ImageName="Analysis" Caption="Employee Overtime" ToolTip="Employee Overtime Department Wise" ViewId="EmpOvertime" IsNewNode="True" />
                   <Item Id="EmpResumption" ToolTip="Employee Resumption" Caption="Employee Resumption" ViewId="EmpResumption" ImageName="Analysis" IsNewNode="True" />
                   <Item Id="ExitStaff" ImageName="Analysis" Caption="Exit Staff" ToolTip="Exit Staff" ViewId="ExitStaff" IsNewNode="True" />
                   <Item Id="LeaveByDept" ViewId="LeaveByDept" ImageName="Analysis" Caption="Leave by Department" ToolTip="Employee Leaves Department Wise" IsNewNode="True" />
@@ -1286,6 +1287,9 @@
             <LayoutGroup Id="RequestLog" Index="3" RelativeSize="100">
               <LayoutItem Id="RequestLog" RelativeSize="100" />
             </LayoutGroup>
+            <LayoutGroup Id="WFReadLog" RelativeSize="100">
+              <LayoutItem Id="WFReadLog" RelativeSize="100" />
+            </LayoutGroup>
           </TabbedGroup>
           <LayoutGroup Id="SizeableEditors" Caption="SizeableEditors" RelativeSize="21.03960396039604" Direction="Horizontal" Removed="True">
             <LayoutItem Id="WorkflowComments" Index="0" RelativeSize="100" Removed="True" />
@@ -1550,6 +1554,30 @@
         </LayoutGroup>
       </Layout>
     </DetailView>
+    <ListView Id="Employee_Document_ListView_Dashboard" ClassName="HCM10.Module.BusinessObjects.PersonnelAdministration.EmployeeDocument" DataAccessMode="Server" AllowDelete="False" AllowNew="False" IsNewNode="True">
+      <Columns IsNewNode="True">
+        <ColumnInfo Id="DocAttachment" PropertyName="DocAttachment" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="DocumentHtml" PropertyName="DocumentHtml" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="IsEndDateAutoChange" PropertyName="IsEndDateAutoChange" Width="50" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="IsSystemGenerated" PropertyName="IsSystemGenerated" Width="50" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="Locked" PropertyName="Locked" Width="50" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="NotificationSent" PropertyName="NotificationSent" Width="50" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="SysCreatedOn" PropertyName="SysCreatedOn" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="SysCreator" PropertyName="SysCreator" Width="50" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="SysModifiedOn" PropertyName="SysModifiedOn" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="SysModifier" PropertyName="SysModifier" Width="50" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="SysTenant" PropertyName="SysTenant" Width="70" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="EmpCode" PropertyName="Employee" View="" Width="70" Index="0" LookupProperty="Code" Caption="Emp Code" IsNewNode="True" />
+        <ColumnInfo Id="Employee" PropertyName="Employee" Width="70" LookupProperty="FullNameEn" Index="1" IsNewNode="True" />
+        <ColumnInfo Id="DocumentType" PropertyName="DocumentType" Width="70" Index="2" IsNewNode="True" />
+        <ColumnInfo Id="DocumentNum" PropertyName="DocumentNum" Width="70" Index="3" IsNewNode="True" />
+        <ColumnInfo Id="IssueDate" PropertyName="IssueDate" Width="70" Index="4" IsNewNode="True" />
+        <ColumnInfo Id="DocumentPlace" PropertyName="DocumentPlace" Width="70" Index="5" IsNewNode="True" />
+        <ColumnInfo Id="ExpiryDate" PropertyName="ExpiryDate" Width="70" Index="5" IsNewNode="True" />
+        <ColumnInfo Id="Comments" PropertyName="Comments" Width="70" Index="6" IsNewNode="True" />
+        <ColumnInfo Id="Description" PropertyName="Description" Width="70" Index="6" IsNewNode="True" />
+      </Columns>
+    </ListView>
     <ListView Id="Employee_Document_ListView_News" AutoExpandAllGroups="True" DataAccessMode="Client" MasterDetailMode="ListViewAndDetailView" NewItemRowPosition="Top" EnableEndlessPaging="False">
       <Columns>
         <ColumnInfo Id="DocumentHtml" PropertyEditorType="DevExpress.ExpressApp.HtmlPropertyEditor.Web.ASPxHtmlPropertyEditor" Index="1" MaxLength="100" OwnerBand="NewsDetails" />
@@ -1940,6 +1968,11 @@
     <DashboardView Id="EmpNonResumption" Caption="Employee Non-Resumption" ImageName="analysis" IsNewNode="True">
       <Items IsNewNode="True">
         <CustomUserControlViewItemWeb Id="EmpNonResumption" CustomControlPath="~/UserControls/Reports/Analysis/Employees/uscRptEmpNonResumption.ascx" Caption="EmpNonResumption" IsNewNode="True" />
+      </Items>
+    </DashboardView>
+    <DashboardView Id="EmpOvertime" Caption="Employee Overtime By Departments" AllowEdit="False" ImageName="analysis" IsNewNode="True">
+      <Items IsNewNode="True">
+        <CustomUserControlViewItemWeb Id="rptEmpOvertime" CustomControlPath="~/UserControls/Reports/Analysis/Employees/uscRptEmpOvertime.ascx" Caption="Employee Overtime by Department" IsNewNode="True" />
       </Items>
     </DashboardView>
     <DashboardView Id="EmpResumption" Caption="Employee Resumption" ImageName="analysis" IsNewNode="True">
@@ -2479,7 +2512,7 @@
     <DashboardView Id="MyDashboardView" ImageName="document" Caption="Document Dashboard" AllowNew="False" AllowDelete="False">
       <Items>
         <KpiDashboardViewItem Id="Age" Removed="True" />
-        <DashboardViewItem Id="dEmpList" Criteria="AddDays([ExpiryDate], - [DocumentType.NotificationPeriod]) &lt;= LocalDateTimeToday() And [ExpiryDate] &gt;= LocalDateTimeToday()" />
+        <DashboardViewItem Id="dEmpList" Criteria="AddDays([ExpiryDate], - [DocumentType.NotificationPeriod]) &lt;= LocalDateTimeToday() And [ExpiryDate] &gt;= LocalDateTimeToday()" ViewId="Employee_Document_ListView_Dashboard" />
         <DashboardViewItem Id="dLeaveList" Removed="True" />
         <KpiDashboardViewItem Id="Nationality" Removed="True" />
       </Items>
