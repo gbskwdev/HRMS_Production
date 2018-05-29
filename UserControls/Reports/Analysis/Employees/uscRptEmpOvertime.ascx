@@ -17,21 +17,22 @@
         <dx:PanelContent runat="server">
             <table>
                 <tr>
-                    <td style="margin-left: 5px">Date</td>
+                    <td style="margin-left: 5px">From</td>
+                    <td style="margin-left: 5px">To</td>
                 </tr>
 
                 <tr>
                     <td>
                         <dx:ASPxDateEdit ID="dtFrom" CssClass="dtFrom_analysis" ClientInstanceName="dtFrom" runat="server" Height="42px" DisplayFormatString="dd/MM/yyyy" EditFormatString="dd/MM/yyyy"></dx:ASPxDateEdit>
                     </td>
-                    <td style="display: none">
+                    <td>
                         <dx:ASPxDateEdit ID="dtTo" CssClass="dtTo_analysis" ClientInstanceName="dtTo" runat="server" Height="42px" DisplayFormatString="dd/MM/yyyy" EditFormatString="dd/MM/yyyy"></dx:ASPxDateEdit>
                     </td>
-                    <td style="display: none">
+                   <%-- <td>
                         <dx:ASPxComboBox ID="cmbSearch" runat="server" Width="170px" CssClass="combo_analysis">
                             <ClearButton DisplayMode="OnHover"></ClearButton>
                         </dx:ASPxComboBox>
-                    </td>
+                    </td>--%>
                     <td>
                         <dx:ASPxButton ID="btnGet" CssClass="btnGet_analysis" ClientInstanceName="btnGetData" runat="server" AutoPostBack="false">
                             <ClientSideEvents Click="function(s,e){ Set1CustomFilterParams(); CallbackPanel1.PerformCallback(0+'|page'); }" />
